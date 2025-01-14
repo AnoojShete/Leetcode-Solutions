@@ -1,31 +1,27 @@
 class Solution {
 public:
-    bool isPossible(vector<int>& nums, int k, int mid) {
+    int calculatePartitions(vector<int>& nums, int mid) {
         int n = nums.size();
-        int sum = 0;
-        int splits = 1;
+        long long sum = 0;
+        int partitions = 1;
         for(int i = 0; i < n; i++) {
-            if(sum + nums[i] > mid) {
-                splits++;
-                sum = nums[i];
-            }
-            else {
+            if(sum + nums[i] <= mid) {
                 sum += nums[i];
             }
+            else {
+                partitions++;
+                sum = nums[i];
+            }
         }
-        if(splits > k) return true;  
-        return false;
+        return partitions;
     }
     int splitArray(vector<int>& nums, int k) {
-        sort(nums.begin(), nums.end());
-        int n = nums.size();
-
-        int low = nums[n - 1];
+        int low = *max_element(nums.begin(), nums.end());
         int high = accumulate(nums.begin(), nums.end(), 0);
 
         while(low <= high) {
             int mid = (low + high) / 2;
-            if(isPossible(nums, k, mid)) low = mid + 1;
+            if(calculatePartitions(nums, mid) > k) low = mid + 1;
             else high = mid - 1;
         }
 
