@@ -14,7 +14,7 @@ public:
         int n = mat.size();
         int m = mat[0].size();
         int maxi = 0;
-        int ans1 = -1;
+        int ans1 = 0;
         int ans2 = 0;
         for(int i = 0; i < n; i++) {
             sort(mat[i].begin(), mat[i].end());
