@@ -14,30 +14,18 @@ public:
     vector<int> largestValues(TreeNode* root) {
         vector<int> ans;
         if(root == nullptr) return ans;
-        map<int, set<int, greater<int>>> mpp;
-        int level = 0;
         queue<TreeNode*> q;
         q.push(root);
-        mpp[0].insert(root->val);
-
         while(!q.empty()) {
             int n = q.size();
+            int maxi = INT_MIN; 
             for(int i = 0; i < n; i++) {
                 auto node = q.front(); q.pop();
-                if(node)
-                    mpp[level].insert(node->val);
-
-                if(node->left) {
-                    q.push(node->left);
-                }
-                if(node->right) {
-                    q.push(node->right);
-                } 
+                if(node->left) q.push(node->left);
+                if(node->right) q.push(node->right);
+                if(node->val > maxi) maxi = node->val;
             }
-            level++;
-        }
-        for(auto p : mpp) {
-            ans.push_back(*p.second.begin());
+            ans.push_back(maxi);
         }
 
         return ans;
