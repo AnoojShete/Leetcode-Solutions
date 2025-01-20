@@ -13,6 +13,7 @@ class Solution {
 public:
     vector<int> largestValues(TreeNode* root) {
         vector<int> ans;
+        if(root == nullptr) return ans;
         map<int, set<int, greater<int>>> mpp;
         int level = 0;
         queue<TreeNode*> q;
