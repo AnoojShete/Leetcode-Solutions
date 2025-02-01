@@ -11,18 +11,21 @@
  */
 class Solution {
 public:
-    long long solve(TreeNode* root, int target) {
-        if(root == nullptr) return 0;
-        return (target == root->val) +
-        solve(root->left, target - root->val) + 
-        solve(root->right, target - root->val);
-        
+    int solve(TreeNode* root, long long sum, int target, unordered_map<long long, int> &mpp) {
+        if(!root) return 0;
+        sum += root->val;
+        int count = mpp[sum - target];
+        mpp[sum]++;
+        count += solve(root->left, sum, target, mpp);
+        count += solve(root->right, sum, target, mpp);
+        mpp[sum]--;
+
+
+        return count;
     }
     int pathSum(TreeNode* root, int target) {
-        if(!root) return 0;
-                
-        return solve(root, target) + 
-                pathSum(root->left, target) +
-                pathSum(root->right, target);
+        unordered_map<long long, int> mpp;
+        mpp[0] = 1;
+        return solve(root, 0, target, mpp);
     }
 };
