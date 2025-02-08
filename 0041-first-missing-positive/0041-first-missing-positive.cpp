@@ -8,6 +8,7 @@ public:
             if(num > large) large = num;
             mpp[num]++;
         }
+        int i;
         for(int i = 1; i <= INT_MAX; i++) {
             if(!mpp.count(i) && i > 0) return i;
         }
