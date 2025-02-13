@@ -1,19 +1,25 @@
 class Solution {
-    bool dfs(vector<int> &sidesLength,const vector<int> &matches, int index) {
-        if (index == matches.size())
-            return sidesLength[0] == sidesLength[1] && sidesLength[1] == sidesLength[2] && sidesLength[2] == sidesLength[3];
-        for (int i = 0; i < 4; ++i) {
-            sidesLength[i] += matches[index];
-            if (dfs(sidesLength, matches, index + 1))
+public:
+    bool solve(int index, vector<int> &matchsticks, vector<int> &len, int sum) {
+        if(index == matchsticks.size()) {
+            return (len[0] == len[1] && len[1] == len[2] && len[2] == len[3]);
+        }
+
+        for(int i = 0; i < 4; ++i) {
+            if(len[i] + matchsticks[index] > sum) continue;
+            len[i] += matchsticks[index];
+            if(solve(index + 1, matchsticks, len, sum))
                 return true;
-            sidesLength[i] -= matches[index];
+            len[i] -= matchsticks[index];
         }
         return false;
     }
-public:
-    bool makesquare(vector<int>& nums) {
-        if (nums.empty()) return false;
-        vector<int> sidesLength(4, 0);
-        return dfs(sidesLength, nums, 0);
+    bool makesquare(vector<int>& matchsticks) {
+        if(matchsticks.size() == 0) return false;
+        vector<int> len(4, 0);
+        int sum = accumulate(matchsticks.begin(), matchsticks.end(), 0);
+
+        sort(matchsticks.begin(), matchsticks.end(), [](int &a, int &b){return a > b;});
+        return solve(0, matchsticks, len, sum / 4);
     }
 };
