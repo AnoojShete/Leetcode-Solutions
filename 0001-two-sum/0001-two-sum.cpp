@@ -1,12 +1,10 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& v, int target) {
-        unordered_map<int, int> mpp;
-        for(int i=0; i<v.size(); i++){
-            int compliment = target-v[i];
-            if(mpp.find(compliment)!=mpp.end())
-                return {mpp[compliment], i};
-            mpp[v[i]] = i;
+        for(int i = 0; i < v.size(); i++) {
+            for(int j = i + 1; j < v.size(); j++) {
+                if(v[i] + v[j] == target) return {i, j};
+            }
         }
         return {-1, -1};
     }
