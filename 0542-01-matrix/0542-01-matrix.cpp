@@ -9,8 +9,8 @@ public:
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < m; j++) {
                 if(mat[i][j] == 0) {
-                    q.push({{i, j}, 0});
                     visited[i][j] = 1;
+                    q.push({{i, j}, 0});
                 }
             }
         }
