@@ -19,7 +19,7 @@ public:
         vector<int> len(4, 0);
         int sum = accumulate(matchsticks.begin(), matchsticks.end(), 0);
 
-        // sort(matchsticks.begin(), matchsticks.end(), [](int &a, int &b){return a > b;});
+        sort(matchsticks.begin(), matchsticks.end(), [](int &a, int &b){return a > b;});
         return solve(0, matchsticks, len, sum / 4);
     }
 };
