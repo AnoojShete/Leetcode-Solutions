@@ -4,7 +4,9 @@ public:
         int left = 0, right = height.size() - 1;
         int ans = 0;
         while(left < right) {
-            ans = max(ans, (right - left) * min(height[left], height[right]));
+            int w = right - left;
+            int h = min(height[left], height[right]);
+            ans = max(ans, w * h);
             if(height[left] < height[right]) left++;
             
             else right--;
