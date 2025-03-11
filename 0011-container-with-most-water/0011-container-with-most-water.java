@@ -6,9 +6,9 @@ class Solution {
             int w = r - l;
             int h = Math.min(height[l], height[r]);
             ans = Math.max(ans, w * h);
-            if(height[l] < height[r]) 
+            if(height[l] <= height[r]) 
                 l++;
-            else r--;
+            else if(height[l] > height[r]) r--;
 
         }
 
