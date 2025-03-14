@@ -8,7 +8,7 @@ public:
 
         while(low < high) {
             int mid = (low + high + 1) / 2;
-            int count = 0;
+            long count = 0;
             for(int i = 0; i < candies.size() && count < k; ++i) {
                 count += candies[i] / mid;
             }
