@@ -1,21 +1,33 @@
 typedef long long ll;
+typedef vector<int> vi;
 
 class Solution {
 public:
-    int maximumCandies(vector<int>& candies, ll k) {
-        int low = 0;
-        int high = 1e7;
+    bool solve(vi &candies, ll k, int mid) {
+        ll count = 0;
+        for(int i = 0; i < candies.size(); ++i) {
+            count += candies[i] / mid;
+            if(count >= k) return true;
+        }
+        return count >= k;
+    }
+    int maximumCandies(vector<int>& candies, long long k) {
+        ll sum = accumulate(candies.begin(), candies.end(), 0);
+        if(sum < k) return 0;
 
-        while(low < high) {
-            int mid = (low + high + 1) / 2;
-            long count = 0;
-            for(int i = 0; i < candies.size() && count < k; ++i) {
-                count += candies[i] / mid;
+        int low = 1;
+        int high = *max_element(candies.begin(), candies.end());
+
+        int ans = 0;
+        while(low <= high) {
+            int mid = (low + high) / 2;
+            if(solve(candies, k, mid)) {
+                low = mid + 1;
+                ans = max(ans, mid);
             }
-            if(count >= k) low = mid;
             else high = mid - 1;
         }
 
-        return low;
+        return ans;
     }
 };
