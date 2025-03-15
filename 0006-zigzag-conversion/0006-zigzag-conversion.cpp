@@ -1,27 +1,34 @@
 class Solution {
 public:
     string convert(string s, int numRows) {
-        int len = s.length();
-        if(numRows == 1 || len <= 2) return s;
-        int step1, step2;
-        string ans = "";
-        for(int i = 0; i < numRows; ++i) {
-            step1 = (numRows - i - 1) * 2;
-            step2 = i * 2;
-            int pos = i;
-            if(pos < len) {
-                ans += s[pos];
-            }
-            while(true) {
-                pos += step1;
-                if(pos >= len) break;
-                if(step1) ans += s[pos];
+        if(s.size() <= 2) return s;
 
-                pos += step2;
-                if(pos >= len) break;
-                if(step2) ans += s[pos];
-            }
+        string ans = "";
+        int diff = numRows * 2 - 2;
+        int j = 0;
+        while(j < s.size()) {
+            ans += s[j];
+            j += diff;
         }
+        for(int i = 1; i < numRows - 1; ++i) {
+            j = i;
+            int k = 0;
+            while(j < s.size()) {
+                ans += s[j];
+                int jump = (numRows - i) * 2 - 2;
+                if(k % 2 == 0) {
+                    j += jump;
+                }
+                else j += diff - jump;
+                ++k;
+            }   
+        }
+        j = numRows - 1;
+        while(j < s.size()) {
+            ans += s[j];
+            j += diff;
+        }
+
         return ans;
     }
 };
