@@ -1,30 +1,33 @@
-typedef vector<int> vi;
-
 class Solution {
 public:
-    bool solve(vi &nums, int k, int mid) {
-        int count = 0;
-        for(int i = 0; i < nums.size(); ++i) {
+    bool isPossible(vector<int> &nums, int k, int mid) {
+        int n = nums.size();
+        int i = 0;
+        while(i < n) {
             if(nums[i] <= mid) {
-                count++;
-                i++;
+                i += 2;
+                k--;
             }
+            else i++;
         }
-        return count < k;
-    }
 
+        return k == 0;
+    }
     int minCapability(vector<int>& nums, int k) {
-        int low = 0;
+        int low = *min_element(nums.begin(), nums.end());
         int high = *max_element(nums.begin(), nums.end());
 
-        while(low < high) {
+        int ans = -1;
+        while(low <= high) {
             int mid = (low + high) / 2;
-            if(solve(nums, k, mid)) {
-                low = mid + 1;
+
+            if(isPossible(nums, k, mid)) {
+                ans = mid;
+                high = mid - 1;
             }
-            else high = mid;
+            else low = mid + 1;
         }
 
-        return low;
+        return ans;
     }
 };
