@@ -1,7 +1,7 @@
 class Solution {
 public:
     string convert(string s, int numRows) {
-        if(s.size() <= 2) return s;
+        if(s.size() <= 2 || numRows == 1) return s;
 
         string ans = "";
         int diff = numRows * 2 - 2;
