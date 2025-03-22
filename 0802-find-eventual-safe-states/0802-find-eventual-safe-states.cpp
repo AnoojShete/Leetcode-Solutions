@@ -4,11 +4,16 @@ private:
     vector<int> &check, vector<vector<int>> &graph) {
         visited[node] = 1;
         pathVisited[node] = 1;
+        check[node] = 0;
         for(auto &v : graph[node]) {
             if(!visited[v]) {
-                if(dfs(v, visited, pathVisited, check, graph)) return true;
+                if(dfs(v, visited, pathVisited, check, graph)) {
+                    check[node] = 0;
+                    return true;
+                }
             }
             else if(pathVisited[v]) {
+                check[node] = 0;
                 return true;
             }
         }
