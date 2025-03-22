@@ -1,15 +1,15 @@
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
-        int n = nums.size();
-        int xor1 = 0;
-        for(int i=0; i<n; i++) {
-            xor1 ^= nums[i]; 
+        unordered_map<int, int> mpp;
+        for(auto num : nums) {
+            mpp[num]++;
         }
-        int xor2 = 0;
-        for(int i=0; i<=n; i++) {
-            xor2 ^= i; 
+
+        for(int i = 0; i <= nums.size(); ++i) {
+            if(mpp[i] == 0) return i;
         }
-        return xor1 ^ xor2;
+
+        return -1;
     }
 };
