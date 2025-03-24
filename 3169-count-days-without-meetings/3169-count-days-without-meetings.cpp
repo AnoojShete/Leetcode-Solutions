@@ -15,6 +15,7 @@ public:
         }
 
         int count = 0;
+        if(ans[0][0] != 1) count += ans[0][0] - 1;
         for(int i = 1; i < ans.size(); ++i) {
             int st = ans[i][0], st_prev = ans[i - 1][0];
             int end = ans[i][1], end_prev = ans[i - 1][1];
