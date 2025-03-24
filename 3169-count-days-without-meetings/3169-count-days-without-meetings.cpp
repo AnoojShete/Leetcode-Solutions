@@ -4,25 +4,18 @@ public:
         int n = meetings.size();
         sort(meetings.begin(), meetings.end());
 
-        int count = 0;
-        int curStart = -1, curEnd = -1;
-        for(auto &meeting : meetings) {
-            int start = meeting[0], end = meeting[1];
-            if(start > curEnd) {
-                if(curEnd != -1) {
-                    count += curEnd - curStart + 1;
-                }
-                curStart = start;
-                curEnd = end;
+        int count = meetings[0][0] - 1;
+        int prevEnd = meetings[0][1];
+
+        for(int i = 1; i < n; ++i) {
+            int st = meetings[i][0];
+            int end = meetings[i][1];
+            if(st > prevEnd) {
+                count += st - prevEnd - 1;
             }
-            else {
-                curEnd = max(curEnd, end);
-            }
-        }
-        if(curEnd != -1) {
-            count += curEnd - curStart + 1;
+            prevEnd = max(end, prevEnd);
         }
 
-        return days - count;
+        return count;
     }
 };
