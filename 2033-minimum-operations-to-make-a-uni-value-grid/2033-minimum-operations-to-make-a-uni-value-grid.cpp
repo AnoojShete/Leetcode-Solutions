@@ -3,17 +3,21 @@ public:
     int minOperations(vector<vector<int>>& grid, int x) {
         int n = grid.size();
         int m = grid[0].size();
-        sort(grid.begin(), grid.end());
-        int mid_element = grid[n / 2][(m - 1) / 2];
-        int MOD = grid[0][0] % x;
-        int count = 0;
-        for(int i = 0; i < n; ++i) {
-            for(int j = 0; j < m; ++j) {
-                // already equal element
-                if(i == n / 2 && j == (m - 1) / 2) continue;
-                if(grid[i][j] % x != MOD) return -1;
-                count += round(abs(grid[i][j] - mid_element) / x);
+        vector<int> sorted_grid;
+        for(auto &v : grid) {
+            for(auto ele : v) {
+                sorted_grid.push_back(ele);
             }
+        }
+        sort(sorted_grid.begin(), sorted_grid.end());
+        int mid_element = sorted_grid[n * m / 2];
+
+        int MOD = sorted_grid[0] % x;
+        int count = 0;
+        for(auto &ele : sorted_grid) {
+            if(ele % x != MOD) return -1;
+            if(ele == mid_element) continue;
+            count += abs(ele - mid_element) / x;
         }
 
         return count;
