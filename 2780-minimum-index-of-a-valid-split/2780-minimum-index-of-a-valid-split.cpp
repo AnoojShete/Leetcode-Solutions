@@ -2,20 +2,25 @@ class Solution {
 public:
     int minimumIndex(vector<int>& nums) {
         int n = nums.size();
-        unordered_map<int, int> mpp;
-        int dom = 0;
-        int freq = 0;
+        int count = 0;
+        int maj = nums[0];
         for(auto num : nums) {
-            mpp[num]++;
-            if(mpp[num] > freq) {
-                freq = mpp[num];
-                dom = num;
+            if(num == maj) count++;
+            else count--;
+            if(count == 0) {
+                maj = num;
+                count = 1;
             }
         }
-        cout << dom << " " << freq << endl;
-        int count = 0;
+
+        int freq = 0;
         for(int i = 0; i < n; ++i) {
-            if(nums[i] == dom) count++;
+            if(nums[i] == maj) freq++;
+        }
+
+        count = 0;
+        for(int i = 0; i < n; ++i) {
+            if(nums[i] == maj) count++;
             if((count > (i + 1) / 2) && (freq - count > (n - i - 1) / 2)) return i;
             cout << count << " ";
         }
