@@ -12,11 +12,12 @@ public:
                 dom = num;
             }
         }
-        cout << dom << " " << freq;
+        cout << dom << " " << freq << endl;
         int count = 0;
         for(int i = 0; i < n; ++i) {
             if(nums[i] == dom) count++;
-            if((count > i + 1) && (freq - count > n - i - 1)) return i;
+            if((count > (i + 1) / 2) && (freq - count > (n - i - 1) / 2)) return i;
+            cout << count << " ";
         }
 
         return -1;
