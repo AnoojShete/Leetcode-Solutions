@@ -23,16 +23,20 @@ public:
             int col = p.second.second;
             int h = heights[row][col];
 
+            if (row == n - 1 && col == m - 1) return d;
+            
             for(int i = 0; i < 4; ++i) {
                 int nrow = row + delRow[i];
                 int ncol = col + delCol[i];
-                if(nrow >= 0 && ncol >= 0 && nrow < n && ncol < m
-                && abs(heights[nrow][ncol] - h) < dist[nrow][ncol]) {
-                    dist[nrow][ncol] = abs(heights[nrow][ncol] - h);
-                    q.push({dist[nrow][ncol], {nrow, ncol}});
+                if(nrow >= 0 && ncol >= 0 && nrow < n && ncol < m) {
+                    int newEffort = max(d, abs(heights[nrow][ncol] - heights[row][col]));
+                    if (newEffort < dist[nrow][ncol]) {
+                        dist[nrow][ncol] = newEffort;
+                        q.push({newEffort, {nrow, ncol}});
+                    }
                 }
             }
         }
-        return dist[n - 1][m - 1];
+        return 0;
     }
 };
