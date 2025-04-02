@@ -1,42 +1,40 @@
 class Solution {
 public:
+    bool isPossible(int row, int col, vector<vector<int>>& heights, 
+    vector<vector<bool>> &vis, int n, int m, int delRow[], int delCol[], int threshold) {
+        if(row == n - 1 && col == m - 1) return true;
+        vis[row][col] = true;
+        for(int i = 0; i < 4; ++i) {
+            int nrow = row + delRow[i];
+            int ncol = col + delCol[i];
+            if(nrow >= 0 && ncol >= 0 && nrow < n && ncol < m
+            && !vis[nrow][ncol]) {
+                if(abs(heights[nrow][ncol] - heights[row][col]) <= threshold
+                && isPossible(nrow, ncol, heights, vis, n, m, delRow, delCol, threshold)) return true;
+            }
+        }
+        return false;
+    }
     int minimumEffortPath(vector<vector<int>>& heights) {
+        int left = 0;
+        int right = 1e6;
         int n = heights.size();
         int m = heights[0].size();
-
-        vector<vector<int>> dist(n, vector<int>(m, INT_MAX));
-        // [height -> x, y]
-        priority_queue<pair<int, pair<int, int>>, 
-        vector<pair<int, pair<int, int>>>, 
-        greater<pair<int, pair<int, int>>>> q;
-
-        q.push({0, {0, 0}});
-        dist[0][0] = 0;
 
         int delRow[] = {-1, 0, 1, 0};
         int delCol[] = {0, -1, 0, 1};
 
-        while(!q.empty()) {
-            auto p = q.top(); q.pop();
-            int d = p.first;
-            int row = p.second.first;
-            int col = p.second.second;
-            int h = heights[row][col];
-
-            if (row == n - 1 && col == m - 1) return d;
-            
-            for(int i = 0; i < 4; ++i) {
-                int nrow = row + delRow[i];
-                int ncol = col + delCol[i];
-                if(nrow >= 0 && ncol >= 0 && nrow < n && ncol < m) {
-                    int newEffort = max(d, abs(heights[nrow][ncol] - heights[row][col]));
-                    if (newEffort < dist[nrow][ncol]) {
-                        dist[nrow][ncol] = newEffort;
-                        q.push({newEffort, {nrow, ncol}});
-                    }
-                }
+        int ans = 0;
+        while(left <= right) {
+            vector<vector<bool>> vis(n, vector<bool>(m, false));
+            int mid = (left + right) / 2;
+            if(isPossible(0, 0, heights, vis, n, m, delRow, delCol, mid)) {
+                right = mid - 1;
+                ans = mid;
             }
+            else left = mid + 1;
         }
-        return 0;
+
+        return ans;
     }
 };
