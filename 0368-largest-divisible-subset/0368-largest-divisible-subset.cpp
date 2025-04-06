@@ -1,26 +1,27 @@
 class Solution {
 public:
-    void solve(int index, vector<int> &temp, int prev, vector<int> &nums, vector<int> &ans) {
-        if(index >= nums.size()) {
-            if(temp.size() > ans.size()) {
-                ans = temp;
-                
-            }
+    vector<int> ans;
+    vector<int> dp;
+    void lds(vector<int> temp,int i,int prev,vector<int>& nums){
+        if(i>=nums.size()){
+            if(temp.size()>ans.size()) ans=temp;
             return;
         }
-        if(nums[index] % prev == 0) {
-            temp.push_back(nums[index]);
-            solve(index + 1, temp, nums[index], nums, ans);
+        //We can't directly use temp.size() without typecasting because it will return an unsigned int and hence if() will not work.
+        if((int)temp.size()>dp[i] && (nums[i]%prev==0)){ 
+            dp[i]=temp.size();
+            temp.push_back(nums[i]);
+            lds(temp,i+1,nums[i],nums);
             temp.pop_back();
         }
-        solve(index + 1, temp, prev, nums, ans);
+        lds(temp,i+1,prev,nums);
     }
+    
     vector<int> largestDivisibleSubset(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        vector<int> ans;
+        sort(nums.begin(),nums.end());
+        for(int i=0;i<=nums.size();i++) dp.push_back(-1);
         vector<int> temp;
-        solve(0, temp, 1, nums, ans);
-
+        lds(temp,0,1,nums);
         return ans;
     }
 };
