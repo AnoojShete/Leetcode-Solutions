@@ -1,44 +1,43 @@
 typedef pair<long, long> pll;
-typedef long long ll;
-
 class Solution {
 public:
-    int MOD = 1e9 + 7;
-    int dijkstra(int n, vector<vector<pll>> &adj, int src) {
-        vector<ll> dist(n, LONG_MAX);
-        vector<ll> ways(n);
-        dist[src] = 0;
-        ways[src] = 1;
+    const long long MOD = 1e9 + 7;
+    int countPaths(int n, vector<vector<int>>& roads) {
+        vector<vector<pll>> adj(n);
+        for(auto &e : roads) {
+            adj[e[0]].push_back({e[1], e[2]});
+            adj[e[1]].push_back({e[0], e[2]});
+        }
         priority_queue<pll, vector<pll>, greater<pll>> pq;
-        pq.push({0, 0}); 
+        vector<long long> dist(n, LLONG_MAX); // Use long long for large distances
+        vector<long long> ways(n, 0);
+
+        pq.push({0, 0});
+        dist[0] = 0;
+        ways[0] = 1;
+
         while(!pq.empty()) {
-            auto p = pq.top(); pq.pop();
-            ll d = p.first, u = p.second;
+            int node = pq.top().second;
+            long long d = pq.top().first;
+            pq.pop();
 
-            if(d > dist[u]) continue;
+            if(d > dist[node]) continue;
 
-            for(auto &[v, time] : adj[u]) {
-                if(dist[v] > d + time) {
-                    dist[v] = d + time;
-                    ways[v] = ways[u];
-                    pq.push({dist[v], v});
+            for(auto it : adj[node]) {
+                int neigh = it.first;
+                long long nd = it.second;
+                long long newd = d + nd;
+
+                if(newd < dist[neigh]) {
+                    dist[neigh] = newd;
+                    ways[neigh] = ways[node];
+                    pq.push({dist[neigh], neigh});
                 }
-                else if(dist[v] == d + time) {
-                    ways[v] = (ways[v] + ways[u]) % MOD;
+                else if(newd == dist[neigh]) {
+                    ways[neigh] = (ways[neigh] + ways[node]) % MOD;
                 }
             }
         }
         return ways[n - 1];
-    }
-    int countPaths(int n, vector<vector<int>>& roads) {
-        // <distance, node>
-        vector<vector<pll>> adj(n);
-        for(auto &road : roads) {
-            ll u = road[0], v = road[1], time = road[2];
-            adj[u].push_back({v, time});
-            adj[v].push_back({u, time});
-        }
-
-        return dijkstra(n, adj, 0);
     }
 };
