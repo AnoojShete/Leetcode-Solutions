@@ -21,8 +21,7 @@ public:
         int src = 0, target = n-1;
         vector<vector<int>> paths;
         vector<bool> vis(n, false);
-        vector<int> temp;
-        temp.push_back(0);
+        vector<int> temp = {0};
         solve(0, graph, vis, paths, temp, target);
 
         return paths;
