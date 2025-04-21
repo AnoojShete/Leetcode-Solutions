@@ -8,14 +8,16 @@ public:
         rad *= r;
         return (x + y) <= rad;
     }
-    void dfs(int node, vector<vector<int>> &adj, vector<bool> &vis, int &count) {
+    int dfs(int node, vector<vector<int>> &adj, vector<bool> &vis) {
         vis[node] = true;
-        count++;
+        int count = 1;
         for(auto &it : adj[node]) {
             if(!vis[it]) {
-                dfs(it, adj, vis, count);
+                count += dfs(it, adj, vis);
             }
         }
+
+        return count;
     }
     int maximumDetonation(vector<vector<int>>& bombs) {
         int n = bombs.size();
@@ -36,9 +38,8 @@ public:
 
         int maxCount = 0;
         for(int i = 0; i < n; ++i) {
-            int count = 0;
             vector<bool> vis(n, false);
-            dfs(i, adj, vis, count);
+            int count = dfs(i, adj, vis);
             maxCount = max(maxCount, count);
         }
 
