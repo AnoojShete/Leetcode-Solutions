@@ -1,7 +1,12 @@
+typedef long long ll;
+
 class Solution {
 public:
     bool isInRange(int x1, int y1, int r, int x2, int y2) {
-        return (pow((x1 - x2), 2) + pow((y1 - y2), 2)) <= r*r;
+        ll x = pow((x1 - x2), 2), y = pow((y1 - y2), 2);
+        ll rad = r;
+        rad *= r;
+        return (x + y) <= rad;
     }
     void dfs(int node, vector<vector<int>> &adj, vector<bool> &vis, int &count) {
         vis[node] = true;
