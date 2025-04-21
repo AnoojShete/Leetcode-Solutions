@@ -25,6 +25,7 @@ public:
             vector<int> bomb = bombs[i];
             int x1 = bomb[0], y1 = bomb[1], r = bomb[2];
             for(int j = 0; j < n; ++j) {
+                if(i == j) continue;
                 vector<int> neigh = bombs[j];
                 int x2 = neigh[0], y2 = neigh[1];
                 if(isInRange(x1, y1, r, x2, y2)) {
