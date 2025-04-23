@@ -1,7 +1,7 @@
 class Solution {
 public:
     int countLargestGroup(int n) {
-        vector<int> mpp(82, 0); 
+        vector<int> mpp(37, 0); 
         int largest = 0;
 
         for(int i = 1; i <= n; ++i) {
