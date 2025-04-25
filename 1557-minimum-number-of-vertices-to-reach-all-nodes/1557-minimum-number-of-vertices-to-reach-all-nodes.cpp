@@ -1,0 +1,19 @@
+class Solution {
+public:
+    vector<int> findSmallestSetOfVertices(int n, vector<vector<int>>& edges) {
+        vector<vector<int>> adj(n);
+        vector<int> indegree(n, 0);
+        for(auto &e : edges) {
+            adj[e[0]].push_back(e[1]);
+            indegree[e[1]]++;
+        }
+        vector<int> ans;
+        for(int i = 0; i < n; ++i) {
+            if(indegree[i] == 0) {
+                ans.push_back(i);
+            }
+        }
+        
+        return ans;
+    }
+};
