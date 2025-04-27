@@ -1,60 +1,42 @@
-class DisjointSet {
-public:
-    vector<int> rank, parent;
-    DisjointSet(int n) {
-        rank.resize(n + 1, 0);
-        parent.resize(n + 1);
-        iota(parent.begin(), parent.end(), 0);
-    }
-
-    int findUPar(int node) {
-        if (node == parent[node])
-            return node;
-        return parent[node] = findUPar(parent[node]);
-    }
-
-    void unionByRank(int u, int v) {
-        int ulp_u = findUPar(u);
-        int ulp_v = findUPar(v);
-        if (ulp_u == ulp_v) return;
-        if (rank[ulp_u] < rank[ulp_v]) {
-            parent[ulp_u] = ulp_v;
-        }
-        else if (rank[ulp_v] < rank[ulp_u]) {
-            parent[ulp_v] = ulp_u;
-        }
-        else {
-            parent[ulp_v] = ulp_u;
-            rank[ulp_u]++;
-        }
-    }
-};
-
 class Solution {
 public:
-    bool isSimilar(string s1, string s2) {
+    bool isSimilar(string &a, string &b) {
         int diff = 0;
-        for(int i = 0; i < s1.length(); ++i) {
-            if(s1[i] != s2[i]) diff++;
+        for(int i = 0; i < a.length(); ++i) {
+            if(a[i] != b[i]) diff++;
+            if(diff > 2) return false;
         }
-        return diff <= 2;
+        return true;
+    }
+    void dfs(string node, unordered_map<string, vector<string>> &adj, unordered_set<string> &vis) {
+        vis.insert(node);
+        for(auto it : adj[node]) {
+            if(vis.find(it) == vis.end()) {
+                dfs(it, adj, vis);
+            }
+        }
     }
     int numSimilarGroups(vector<string>& strs) {
+        unordered_map<string, vector<string>> adj;
         int n = strs.size();
-        DisjointSet ds(n);
-        int count = 0;
         for(int i = 0; i < n; ++i) {
             for(int j = i + 1; j < n; ++j) {
-                string s1 = strs[i];
-                string s2 = strs[j];
-                if(isSimilar(s1, s2)) {
-                    if(ds.findUPar(i) != ds.findUPar(j)) {
-                        count++;
-                        ds.unionByRank(i, j);
-                    }
+                string u = strs[i], v = strs[j];
+                if(isSimilar(u, v)) {
+                    adj[u].push_back(v);
+                    adj[v].push_back(u);
                 }
             }
         }
-        return n - count;
+        int component = 0;
+        unordered_set<string> vis;
+        for(auto node : strs) {
+            if(vis.find(node) == vis.end()) {
+                component++;
+                dfs(node, adj, vis);
+            }
+        }
+
+        return component;
     }
 };
