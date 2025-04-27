@@ -48,7 +48,7 @@ public:
 class Solution {
 public:
     bool equationsPossible(vector<string>& equations) {
-        int n = equations.size();
+        int n = 26;
         DisjointSet ds(n);
         for(auto &e : equations) {
             if(e[1] == '=') {
