@@ -56,7 +56,7 @@ public:
                 int ncol = col + delta[i + 1];
                 if(inBounds(nrow, ncol, n) && !vis[nrow][ncol]) {
                     int new_d = min(d, dist[nrow][ncol]);
-                    vis[row][col] = true;
+                    vis[nrow][ncol] = true;
                     pq.push({new_d, {nrow, ncol}});
                 }
             }
