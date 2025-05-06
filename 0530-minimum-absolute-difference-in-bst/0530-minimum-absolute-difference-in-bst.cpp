@@ -11,14 +11,17 @@
  */
 class Solution {
 public:
-    int ans = INT_MAX, pre = -1;
-    
-    int getMinimumDifference(TreeNode* root) {
-        if(root->left != nullptr) getMinimumDifference(root->left);
-        if(pre >= 0) ans = min(ans, root->val - pre);
-        pre = root->val;
-        if(root->right != nullptr) getMinimumDifference(root->right);
+    int minDiff = INT_MAX, prev = -1;
+    void solve(TreeNode* root) {
+        if(root == nullptr) return;
 
-        return ans;
+        solve(root->left);
+        minDiff = min(minDiff, abs(root->val - prev));
+        prev = root->val;
+        solve(root->right);
+    }
+    int getMinimumDifference(TreeNode* root) {
+        solve(root);
+        return minDiff;
     }
 };
