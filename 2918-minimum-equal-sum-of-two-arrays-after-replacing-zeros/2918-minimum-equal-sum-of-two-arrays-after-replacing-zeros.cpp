@@ -3,7 +3,7 @@ public:
     long long minSum(vector<int>& nums1, vector<int>& nums2) {
         int n1 = nums1.size();
         int n2 = nums2.size();
-        int sum1 = 0, sum2 = 0;
+        long long sum1 = 0, sum2 = 0;
         int z1 = 0, z2 = 0;
         for(auto num : nums1) {
             if(num == 0) z1++;
