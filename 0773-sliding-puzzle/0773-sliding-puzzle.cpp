@@ -1,41 +1,53 @@
 class Solution {
 public:
-int solve(vector<vector<int>>&board,map<string,int>&mp,int x,int y){
-    if(board[0][0]==1&&board[0][1]==2&&board[0][2]==3&&board[1][0]==4&&board[1][1]==5&&board[1][2]==0)return 0;
-    string temp="";
-    for(int i=0;i<2;i++){
-        for(int j=0;j<3;j++){
-            temp+=to_string(board[i][j]);
-        }
+    bool isValid(vector<vector<int>> &board) {
+        vector<vector<int>> correct = {{1, 2, 3}, {4, 5, 0}};
+        return board == correct;
     }
-    if(mp.find(temp)!=mp.end())return 1e6;
-    mp[temp]++;
-     
-    int dx[]={1,-1,0,0};
-    int dy[]={0,0,-1,1};
-    int ans=INT_MAX;
-    for(int i=0;i<4;i++){
-        int newx=x+dx[i];
-        int newy=y+dy[i];
-        if(newx>=0&&newx<=1&&newy>=0&&newy<=2){
-            swap(board[x][y], board[newx][newy]);
-            ans=min(ans,1+solve(board,mp,newx,newy));  
-            swap(board[x][y], board[newx][newy]);          
-        }
+    bool inBounds(int row, int col, int n, int m) {
+        return row >= 0 && col >= 0 && row < n && col < m;
     }
-    return ans;
-}
     int slidingPuzzle(vector<vector<int>>& board) {
-        map<string,int>mp; 
-        int x;int y;
-        string temp="";
-        for(int i=0;i<2;i++){
-            for(int j=0;j<3;j++){
-                if(board[i][j]==0){x=i;y=j;}
-                temp+=to_string(board[i][j]);
+        int n = 2, m = 3;
+        
+        set<vector<vector<int>>> vis;
+        queue<vector<vector<int>>> q;
+        q.push(board);
+        vis.insert(board);
+
+        int moves = 0;
+        while(!q.empty()) {
+            int sz = q.size();
+            while(sz--) {
+                auto node = q.front();
+                q.pop();
+                if(isValid(node)) return moves;
+
+                int row = -1, col = -1;
+                for(int i = 0; i < node.size(); ++i) {
+                    for(int j = 0; j < node[0].size(); ++j) {
+                        if(node[i][j] == 0) {
+                            row = i, col = j;
+                        }
+                    }
+                }
+                int delta[] = {-1, 0, 1, 0, -1};
+                for(int i = 0; i < 4; ++i) {
+                    int nrow = row + delta[i];
+                    int ncol = col + delta[i + 1];
+                    if(inBounds(nrow, ncol, n, m)) {
+                        auto temp = node;
+                        swap(temp[row][col], temp[nrow][ncol]);
+                        if(vis.find(temp) == vis.end()) {
+                            q.push(temp);
+                            vis.insert(temp);
+                        }
+                    }
+                }
             }
-        }                
-        int ans= solve(board,mp,x,y);   
-        return ans>=1e6?-1:ans;     
+            moves++;
+        }
+
+        return -1;
     }
 };
