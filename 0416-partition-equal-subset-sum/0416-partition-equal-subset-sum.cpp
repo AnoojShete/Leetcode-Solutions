@@ -1,23 +1,16 @@
 class Solution {
 public:
-    bool canPartition(vector<int>& nums) {
-        int total = accumulate(nums.begin(), nums.end(), 0);
-        if (total % 2 != 0) return false;
-
-        int target = total / 2;
-        sort(nums.begin(), nums.end(), greater<int>()); // Helps prune faster
-
-        return backtrack(nums, 0, target);
+    bool solve(int idx, vector<int> &nums, int sum, int totalSum, vector<vector<int>> &memo) {
+        if(idx == nums.size()) {
+            return sum == totalSum - sum;
+        }
+        if(memo[idx][sum] != -1) return memo[idx][sum];
+        return memo[idx][sum] = (solve(idx + 1, nums, sum + nums[idx], totalSum, memo)
+                || solve(idx + 1, nums, sum, totalSum, memo));
     }
-
-    bool backtrack(vector<int>& nums, int index, int target) {
-        if (target == 0) return true;
-        if (target < 0 || index >= nums.size()) return false;
-
-        // Choose the number at current index
-        if (backtrack(nums, index + 1, target - nums[index])) return true;
-
-        // Skip the number
-        return backtrack(nums, index + 1, target);
+    bool canPartition(vector<int>& nums) {
+        vector<vector<int>> memo(201, vector<int>(20001, -1));
+        int totalSum = accumulate(nums.begin(), nums.end(), 0);
+        return solve(0, nums, 0, totalSum, memo);
     }
 };
