@@ -1,16 +1,24 @@
 class Solution {
 public:
-    bool solve(int idx, vector<int> &nums, int sum, int totalSum, vector<vector<int>> &memo) {
-        if(idx == nums.size()) {
-            return sum == totalSum - sum;
-        }
-        if(memo[idx][sum] != -1) return memo[idx][sum];
-        return memo[idx][sum] = (solve(idx + 1, nums, sum + nums[idx], totalSum, memo)
-                || solve(idx + 1, nums, sum, totalSum, memo));
-    }
     bool canPartition(vector<int>& nums) {
-        vector<vector<int>> memo(201, vector<int>(20001, -1));
-        int totalSum = accumulate(nums.begin(), nums.end(), 0);
-        return solve(0, nums, 0, totalSum, memo);
+        int n = nums.size();
+        int sum = accumulate(nums.begin(), nums.end(), 0);
+        if(sum % 2 != 0) return false;
+        int t[n+1][sum/2+1];
+        for(int i = 0; i <= n; ++i) {
+            for(int j = 0; j <= sum / 2; ++j) {
+                if(i == 0) t[i][j] = false;
+                if(j == 0) t[i][j] = true;
+            }
+        }
+        for(int i = 1; i <= n; ++i) {
+            for(int j = 1; j <= sum / 2; ++j) {
+                if(nums[i-1] <= j) {
+                    t[i][j] = t[i-1][j-nums[i-1]] || t[i-1][j];
+                }
+                else t[i][j] = t[i-1][j];
+            }
+        }
+        return t[n][sum/2];
     }
 };
