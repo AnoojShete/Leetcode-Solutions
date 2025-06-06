@@ -2,6 +2,17 @@ class Solution {
 public:
     const int mod = 1e9 + 7;
     int memo[301][301];
+    long long modPow(long long num, long long x, int mod) {
+        long long result = 1;
+        while (x > 0) {
+            if (x % 2 == 1) {
+                result = (result * num) % mod;
+            }
+            num = (num * num) % mod;
+            x /= 2;
+        }
+        return result;
+    }
     int solve(int num, int n, int x, int sum) {
         if(num == n+1) {
             cout << sum << " ";
@@ -10,7 +21,7 @@ public:
         if(sum > n) return 0;
         if(memo[num][sum] != -1) return memo[num][sum] % mod; 
         int count = 0;
-        count += solve(num+1, n, x, sum + pow(num, x)) % mod;
+        count += solve(num+1, n, x, sum + modPow(num, x, mod)) % mod;
         count += solve(num+1, n, x, sum) % mod;
         return memo[num][sum] = count % mod;
     }
