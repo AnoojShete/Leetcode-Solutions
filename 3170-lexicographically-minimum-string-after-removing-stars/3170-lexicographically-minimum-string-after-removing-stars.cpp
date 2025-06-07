@@ -1,21 +1,17 @@
 class Solution {
 public:
     string clearStars(string s) {
-        priority_queue<char, vector<char>, greater<char>> pq;
-        unordered_map<char, vector<int>> mpp;
+        priority_queue<pair<char, int>, vector<pair<char, int>>, greater<pair<char, int>>> pq;
         vector<bool> keep(s.length(), true);
         for(int i = 0; i < s.length(); ++i) {
             char ch = s[i];
             if(ch != '*') {
-                pq.push(ch);
-                mpp[ch].push_back(i);
+                pq.push({ch, -i});
             }
             else {
-                auto x = pq.top(); pq.pop();
-                int idx = mpp[x].back();
-                mpp[x].pop_back();
+                auto [x, idx] = pq.top(); pq.pop();
                 keep[i] = false;
-                keep[idx] = false;
+                keep[-idx] = false;
             }
         }
         string ans = "";
