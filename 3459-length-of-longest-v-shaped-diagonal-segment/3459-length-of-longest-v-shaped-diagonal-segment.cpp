@@ -28,9 +28,11 @@ public:
         // edge case
         memset(memo, -1, sizeof memo);
         int ans = 1;
+        bool isOne = false;
         for(int row = 0; row < m; ++row) {
             for(int col = 0; col < n; ++col) {
                 if(grid[row][col] == 1) {
+                    isOne = true;
                     for(int i = 0; i < 4; ++i) {
                         int nrow = row + dirs[i].first;
                         int ncol = col + dirs[i].second;
@@ -41,6 +43,6 @@ public:
                 }
             }
         }
-        return ans;
+        return isOne ? ans : 0;
     }
 };
