@@ -1,34 +1,30 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        unordered_map<char, int> countT;
-        unordered_map<char, int> window;
+        int m = s.length(), n = t.length();
+        if(m < n) return "";
+        unordered_map<char, int> sMpp, tMpp;
+        int count = 0;
         for(auto ch : t) {
-            countT[ch]++;
+            if(tMpp[ch] == 0) count++;
+            tMpp[ch]++;
         }
-        int have = 0, need = t.size();
-        pair<int, int> pos = {-1, -1};
+        int i = 0;
         int minLen = INT_MAX;
-        int l = 0, r = 0;
-        while(r < s.size()) {
-            char c = s[r];
-            window[c]++;
-            if(countT.find(c) != countT.end() && window[c] <= countT[c]) have++;
-
-            while(have == need) {
-                if(r - l + 1 < minLen) {
-                    pos = {l , r};
-                    minLen = r - l + 1;
+        int start = -1, end = -1;
+        for(int j = 0; j < m; ++j) {
+            sMpp[s[j]]++;
+            if(tMpp[s[j]] > 0 && sMpp[s[j]] == tMpp[s[j]]) count--;
+            while(count == 0) {
+                if(minLen > j - i + 1) {
+                    minLen = j - i + 1;
+                    start = i, end = j;
                 }
-                window[s[l]]--;
-                if(countT.find(s[l]) != countT.end() && window[s[l]] < countT[s[l]]) {
-                    have--;
-                }
-                l++;
+                if(tMpp[s[i]] > 0 && sMpp[s[i]] == tMpp[s[i]]) count++;
+                sMpp[s[i]]--;
+                i++;
             }
-            r++;
         }
-        l = pos.first, r = pos.second;
-        return minLen == INT_MAX ? "" : s.substr(l, r + 1);
+        return start == -1 && end == -1 ? "" : s.substr(start, end - start + 1);
     }
 };
