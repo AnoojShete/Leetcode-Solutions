@@ -10,7 +10,7 @@ public:
         vector<pair<int, pair<int, int>>>, 
         greater<pair<int, pair<int, int>>>> pq;
 
-        pq.push({0, {0, 0}}); // Starting cell
+        pq.push({grid[0][0], {0, 0}}); // Starting cell
         dist[0][0] = 0;
 
         int delta[] = {-1, 0, 1, 0, -1};
