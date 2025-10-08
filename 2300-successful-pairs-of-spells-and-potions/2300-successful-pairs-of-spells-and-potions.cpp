@@ -4,19 +4,17 @@ class Solution {
 public:
     vector<int> successfulPairs(vector<int>& spells, vector<int>& potions, long long success) {
         int n = spells.size();
-        vector<pair<int, int>> indexedSpells(n);
-        for(int i = 0; i < n; ++i) {
-            indexedSpells[i] = {spells[i], i};
-        }
-        sort(indexedSpells.rbegin(), indexedSpells.rend());
         sort(potions.begin(), potions.end());
         vector<int> ans(n);
-        int i = 0;
-        for(auto &[spell, idx] : indexedSpells) {
-            while(i < potions.size() && 1LL * spell * potions[i] < success) {
-                ++i;
+        for(int i = 0; i < n; ++i) {
+            int left = 0, right = potions.size()-1;
+            while(left <= right) {
+                int mid = (left + right) / 2;
+                ll prod = 1LL * spells[i] * potions[mid];
+                if(prod >= success) right = mid - 1;
+                else left = mid + 1;
             }
-            ans[idx] = potions.size() - i;
+            ans[i] = potions.size() - left;
         }
         return ans;
     }
