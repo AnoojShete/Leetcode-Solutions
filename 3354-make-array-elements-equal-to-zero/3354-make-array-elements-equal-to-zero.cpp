@@ -10,11 +10,22 @@ public:
         }
         leftSum[n-1] = nums[n-1];
         for(int i = n-2; i >= 0; --i) {
-            leftSum[i] += leftSum[i+1];
+            leftSum[i] = nums[i] + leftSum[i+1];
         }
         for(int i = 0; i < n; ++i) {
-            if(nums[i] == 0 && rightSum[i] == leftSum[i]) return rightSum[i]-1;
+            cout << rightSum[i] << " ";
         }
-        return 0;
+        cout << '\n';
+        for(int i = 0; i < n; ++i) {
+            cout << leftSum[i] << " ";
+        }
+        int count = 0;
+        for(int i = 0; i < n; ++i) {
+            if(nums[i] == 0) {
+                if(rightSum[i] == leftSum[i]) count += 2;
+                else if(abs(rightSum[i] - leftSum[i]) == 1) count++;
+            }
+        }
+        return count;
     }
 };
