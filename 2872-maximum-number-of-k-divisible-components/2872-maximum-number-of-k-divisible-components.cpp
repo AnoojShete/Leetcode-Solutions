@@ -1,7 +1,7 @@
 class Solution {
 public:
     int count = 0;
-    int solve(int parent, int node, vector<vector<int>> &adj, vector<int> &values, int k) {
+    long long solve(int parent, int node, vector<vector<int>> &adj, vector<int> &values, int k) {
         long long sum = values[node];
         for(auto &nei : adj[node]) {
             if(nei == parent) continue;
