@@ -21,7 +21,7 @@ public:
             for(auto it : adj[node]) {
                 int neigh = it.first;
                 int t2 = it.second;
-                if(t + t2 < dijk[t2]) {
+                if(t + t2 < dijk[neigh]) {
                     dijk[neigh] = t + t2;
                     pq.push({dijk[neigh], neigh});
                 }
