@@ -1,13 +1,14 @@
 var maxMatrixSum = function(matrix) {
-    let count = 0, flag = false, sum = 0;
+    const n = matrix.length;
+    let count = 0, sum = 0;
     let mini = Infinity;
-    for(const row of matrix) {
-        for(const val of row) {
-            if(val < 0) count++;
-            sum += Math.abs(val);
-            mini = Math.min(mini, Math.abs(val));
+    for(let i = 0; i < n; ++i) {
+        for(let j = 0; j < n; ++j) {
+            if(matrix[i][j] < 0) count++;
+            sum += Math.abs(matrix[i][j]);
+            mini = Math.min(mini, Math.abs(matrix[i][j]));
         }
     }
-    if(count % 2 === 0 || flag) return sum;
-    return sum - 2 * mini;
+    if(count & 1) return sum - 2 * mini;
+    return sum;
 };
