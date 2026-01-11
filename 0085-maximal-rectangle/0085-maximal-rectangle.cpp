@@ -1,5 +1,9 @@
 class Solution {
 public:
+    void print(vector<int> &heights) {
+        for(int it : heights) cout << it;
+        cout << endl;
+    }
     int maximalRectangle(vector<vector<char>>& matrix) {
         if (matrix.empty()) return 0;
         int m = matrix.size(), n = matrix[0].size();
@@ -10,7 +14,7 @@ public:
             for (int j = 0; j < n; ++j) {
                 heights[j] = (matrix[i][j] == '1') ? heights[j] + 1 : 0;
             }
-
+            print(heights);
             stack<int> st;
             vector<int> left(n), right(n);
 
