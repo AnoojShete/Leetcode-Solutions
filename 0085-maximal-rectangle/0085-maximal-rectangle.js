@@ -11,7 +11,7 @@ var maximalRectangle = function(matrix) {
         const left = new Array(n), right = new Array(n);
         for(let i = 0; i < n; ++i) {
             while(st.length > 0 && dp[st[st.length-1]] >= dp[i]) st.pop();
-            left[i] = st.length ? st[st.length-1] : 0;
+            left[i] = st.length ? st[st.length-1] : -1;
             st.push(i);
         }
         st = [];
@@ -21,7 +21,7 @@ var maximalRectangle = function(matrix) {
             st.push(i);
         }
         for(let i = 0; i < n; ++i) {
-            ans = Math.max(ans, (right[i] - left[i]) * dp[i]);
+            ans = Math.max(ans, (right[i] - left[i] - 1) * dp[i]);
         }
     }
     return ans;
