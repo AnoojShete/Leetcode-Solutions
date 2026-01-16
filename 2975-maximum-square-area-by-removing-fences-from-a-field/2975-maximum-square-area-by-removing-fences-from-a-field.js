@@ -1,6 +1,6 @@
 var maximizeSquareArea = function(m, n, hFences, vFences) {
-    hFences.push(1, m);
-    vFences.push(1, n);
+    hFences.push(m);
+    vFences.push(n);
     const hsz = hFences.length, vsz = vFences.length;
     const st = new Set();
     for(let i = 0; i < hsz - 1; ++i) {
