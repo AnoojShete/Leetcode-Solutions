@@ -10,7 +10,7 @@ public:
             return take || skip;
         }
 
-        return (s[i] == p[j] || p[j] == '.') && solve(i + 1, j + 1, s, p);
+        return (i < s.length() && (s[i] == p[j] || p[j] == '.')) && solve(i + 1, j + 1, s, p);
     }
     bool isMatch(string s, string p) {
         return solve(0, 0, s, p);
