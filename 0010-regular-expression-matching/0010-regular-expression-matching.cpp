@@ -1,9 +1,9 @@
 class Solution {
 public:
     bool solve(int i, int j, string &s, string &p) {
-        if(i == s.length() && j == p.length()) return true;
+        if(j == p.length()) return i == s.length();
         
-        bool flag = (i < s.length() && s[i] == p[j] || p[j] == '.');
+        bool flag = (i < s.length() && (s[i] == p[j] || p[j] == '.'));
         if(j + 1 < p.length() && p[j + 1] == '*') {
             return solve(i, j + 2, s, p) || (flag && solve(i + 1, j, s, p));
         }
