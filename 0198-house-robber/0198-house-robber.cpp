@@ -2,7 +2,7 @@ class Solution {
 public:
     int rob(vector<int>& nums) {
         int n = nums.size();
-        int dp[101];
+        int dp[102];
         dp[n] = 0;
         dp[n-1] = nums[n-1];
         for(int i = n-1; i >= 0; --i) {
