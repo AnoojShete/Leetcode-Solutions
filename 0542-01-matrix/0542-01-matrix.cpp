@@ -26,8 +26,8 @@ public:
                 int ncol = c + delCol[i];
                 if(nrow >= 0 && ncol >= 0 && nrow < n &&
                 ncol < m && !visited[nrow][ncol]) {
-                    q.push({{nrow, ncol}, dist + 1});
                     visited[nrow][ncol] = 1;
+                    q.push({{nrow, ncol}, dist + 1});
                 }
             }
         }
