@@ -1,74 +1,55 @@
-<h2><a href="https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph">3419. Minimize the Maximum Edge Weight of Graph</a></h2><h3>Medium</h3><hr><p>You are given two integers, <code>n</code> and <code>threshold</code>, as well as a <strong>directed</strong> weighted graph of <code>n</code> nodes numbered from 0 to <code>n - 1</code>. The graph is represented by a <strong>2D</strong> integer array <code>edges</code>, where <code>edges[i] = [A<sub>i</sub>, B<sub>i</sub>, W<sub>i</sub>]</code> indicates that there is an edge going from node <code>A<sub>i</sub></code> to node <code>B<sub>i</sub></code> with weight <code>W<sub>i</sub></code>.</p>
+# LeetCode Solutions
 
-<p>You have to remove some edges from this graph (possibly <strong>none</strong>), so that it satisfies the following conditions:</p>
+A comprehensive collection of LeetCode problem solutions with clean, efficient implementations.
 
-<ul>
-	<li>Node 0 must be reachable from all other nodes.</li>
-	<li>The <strong>maximum</strong> edge weight in the resulting graph is <strong>minimized</strong>.</li>
-	<li>Each node has <strong>at most</strong> <code>threshold</code> outgoing edges.</li>
-</ul>
+## Overview
 
-<p>Return the <strong>minimum</strong> possible value of the <strong>maximum</strong> edge weight after removing the necessary edges. If it is impossible for all conditions to be satisfied, return -1.</p>
+This repository contains solutions to various LeetCode problems across different difficulty levels and topics. Each solution includes:
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+- **Well-documented code** with clear explanations
+- **Multiple approaches** where applicable (brute force → optimized)
+- **Time and Space Complexity analysis**
+- **Problem descriptions and examples**
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">n = 5, edges = [[1,0,1],[2,0,2],[3,0,1],[4,3,1],[2,1,1]], threshold = 2</span></p>
+## Repository Structure
 
-<p><strong>Output:</strong> <span class="example-io">1</span></p>
+Solutions are organized by problem number and name, making it easy to locate and reference specific problems:
+- `0001-two-sum/`
+- `0002-add-two-numbers/`
+- `0003-longest-substring-without-repeating-characters/`
+- ... and more
 
-<p><strong>Explanation:</strong></p>
+## Getting Started
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2024/12/09/s-1.png" style="width: 300px; height: 233px;" /></p>
+1. Browse the repository to find problems you're interested in
+2. Each problem folder contains:
+   - Solution code files
+   - README with problem description
+   - Complexity analysis
 
-<p>Remove the edge <code>2 -&gt; 0</code>. The maximum weight among the remaining edges is 1.</p>
-</div>
+## Topics Covered
 
-<p><strong class="example">Example 2:</strong></p>
+- Arrays & Hashing
+- Two Pointers
+- Sliding Window
+- Stack & Queue
+- Linked Lists
+- Trees & Graphs
+- Dynamic Programming
+- Greedy Algorithms
+- And more...
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">n = 5, edges = [[0,1,1],[0,2,2],[0,3,1],[0,4,1],[1,2,1],[1,4,1]], threshold = 1</span></p>
+## Contributing
 
-<p><strong>Output:</strong> <span class="example-io">-1</span></p>
+Feel free to:
+- Suggest optimizations
+- Add alternative solutions
+- Report issues
 
-<p><strong>Explanation:</strong>&nbsp;</p>
+## License
 
-<p>It is impossible to reach node 0 from node 2.</p>
-</div>
+This project is open source and available for educational purposes.
 
-<p><strong class="example">Example 3:</strong></p>
+---
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">n = 5, edges = [[1,2,1],[1,3,3],[1,4,5],[2,3,2],[3,4,2],[4,0,1]], threshold = 1</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">2</span></p>
-
-<p><strong>Explanation:</strong>&nbsp;</p>
-
-<p><img alt="" src="https://assets.leetcode.com/uploads/2024/12/09/s2-1.png" style="width: 300px; height: 267px;" /></p>
-
-<p>Remove the edges <code>1 -&gt; 3</code> and <code>1 -&gt; 4</code>. The maximum weight among the remaining edges is 2.</p>
-</div>
-
-<p><strong class="example">Example 4:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">n = 5, edges = [[1,2,1],[1,3,3],[1,4,5],[2,3,2],[4,0,1]], threshold = 1</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">-1</span></p>
-</div>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>
-	<li><code>1 &lt;= threshold &lt;= n - 1</code></li>
-	<li><code>1 &lt;= edges.length &lt;= min(10<sup>5</sup>, n * (n - 1) / 2).</code></li>
-	<li><code>edges[i].length == 3</code></li>
-	<li><code>0 &lt;= A<sub>i</sub>, B<sub>i</sub> &lt; n</code></li>
-	<li><code>A<sub>i</sub> != B<sub>i</sub></code></li>
-	<li><code>1 &lt;= W<sub>i</sub> &lt;= 10<sup>6</sup></code></li>
-	<li>There <strong>may be</strong> multiple edges between a pair of nodes, but they must have unique weights.</li>
-</ul>
+**Note:** These solutions are for educational and interview preparation purposes.
