@@ -53,3 +53,27 @@ This project is open source and available for educational purposes.
 ---
 
 **Note:** These solutions are for educational and interview preparation purposes.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+## Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+## Binary Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+<!---LeetCode Topics End-->
