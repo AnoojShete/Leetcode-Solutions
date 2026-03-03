@@ -76,4 +76,16 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1545-find-kth-bit-in-nth-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1545-find-kth-bit-in-nth-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1545-find-kth-bit-in-nth-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 <!---LeetCode Topics End-->
