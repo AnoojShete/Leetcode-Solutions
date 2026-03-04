@@ -96,6 +96,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
 | [0056-merge-intervals](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0056-merge-intervals/) | Medium |
+| [0198-house-robber](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0198-house-robber/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -113,4 +114,8 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0056-merge-intervals](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0056-merge-intervals/) | Medium |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0198-house-robber](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0198-house-robber/) | Medium |
 <!---LeetCode Topics End-->
