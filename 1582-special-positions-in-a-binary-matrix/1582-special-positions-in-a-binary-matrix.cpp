@@ -13,7 +13,8 @@ public:
         for(int i = 0; i < m; ++i) {
             if(countRow[i] > 1) continue;
             for(int j = 0; j < n; ++j) {
-                if(mat[i][j] && countCol[j] == 1 && countRow[i] == 1) count++;
+                if(countCol[j] > 1) continue;
+                if(mat[i][j]) count++;
             }
         }
         return count;
