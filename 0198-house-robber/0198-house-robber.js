@@ -6,6 +6,5 @@ var rob = function(nums) {
     for(let i = 2; i < n; ++i) {
         dp[i] = Math.max(nums[i] + dp[i-2], dp[i-1]);
     }
-    console.log(dp);
     return dp[n-1];
 };
