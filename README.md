@@ -83,6 +83,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+| [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
