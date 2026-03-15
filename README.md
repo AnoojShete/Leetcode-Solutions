@@ -136,6 +136,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0029-divide-two-integers](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0029-divide-two-integers/) | Medium |
 | [0670-maximum-swap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0670-maximum-swap/) | Medium |
+| [1622-fancy-sequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1622-fancy-sequence/) | Hard |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 ## Bit Manipulation
 | Problem Name | Difficulty |
@@ -177,4 +178,12 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
+## Design
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1622-fancy-sequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1622-fancy-sequence/) | Hard |
+## Segment Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1622-fancy-sequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1622-fancy-sequence/) | Hard |
 <!---LeetCode Topics End-->
