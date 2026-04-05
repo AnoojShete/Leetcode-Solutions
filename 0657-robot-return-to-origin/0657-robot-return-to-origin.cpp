@@ -3,10 +3,20 @@ public:
     bool judgeCircle(string moves) {
         int c1 = 0, c2 = 0;
         for(auto ch : moves) {
-            if(ch == 'L') c1++;
-            else if(ch == 'R') c1--;
-            else if(ch == 'U') c2++;
-            else c2--;
+            switch(ch) {
+                case 'R':
+                    c1++;
+                    break;
+                case 'L':
+                    c1--;
+                    break;
+                case 'U':
+                    c2++;
+                    break;
+                case 'D':
+                    c2--;
+                    break;
+            }
         }
         return c1 == 0 && c2 == 0;
     }
