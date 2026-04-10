@@ -116,12 +116,14 @@ This project is open source and available for educational purposes.
 | [3355-zero-array-transformation-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3355-zero-array-transformation-i/) | Medium |
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
 | [3643-flip-square-submatrix-vertically](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3643-flip-square-submatrix-vertically/) | Easy |
+| [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
+| [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
