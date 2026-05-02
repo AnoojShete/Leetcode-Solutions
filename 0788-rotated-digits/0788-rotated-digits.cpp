@@ -9,7 +9,7 @@ public:
         for(int num = 2; num <= n; ++num) {
             int temp = num;
             bool flag = true;
-            int rev = 0, revv = 0;
+            int rev = 0;
             while(temp) {
                 int d = temp % 10;
                 if(!mpp.count(d)) {
@@ -17,7 +17,6 @@ public:
                     break;
                 }
                 rev = rev * 10 + mpp[d];
-                revv = revv * 10 + d;
                 temp /= 10;
             }
             if(flag && rev != revv) ans++;
