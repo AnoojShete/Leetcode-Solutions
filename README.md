@@ -106,6 +106,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
+| [0048-rotate-image](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0048-rotate-image/) | Medium |
 | [0056-merge-intervals](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0056-merge-intervals/) | Medium |
 | [0198-house-robber](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0198-house-robber/) | Medium |
 | [0334-increasing-triplet-subsequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0334-increasing-triplet-subsequence/) | Medium |
@@ -132,6 +133,7 @@ This project is open source and available for educational purposes.
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0048-rotate-image/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
@@ -162,6 +164,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0029-divide-two-integers](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0029-divide-two-integers/) | Medium |
+| [0048-rotate-image](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0048-rotate-image/) | Medium |
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
 | [0670-maximum-swap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0670-maximum-swap/) | Medium |
 | [0788-rotated-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0788-rotated-digits/) | Medium |
