@@ -59,6 +59,7 @@ This project is open source and available for educational purposes.
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0061-rotate-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0061-rotate-list/) | Medium |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 ## Tree
 | Problem Name | Difficulty |
@@ -231,6 +232,7 @@ This project is open source and available for educational purposes.
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0061-rotate-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0061-rotate-list/) | Medium |
 | [3643-flip-square-submatrix-vertically](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3643-flip-square-submatrix-vertically/) | Easy |
 ## Enumeration
 | Problem Name | Difficulty |
