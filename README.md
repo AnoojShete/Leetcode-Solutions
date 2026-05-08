@@ -77,6 +77,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -122,6 +123,7 @@ This project is open source and available for educational purposes.
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3355-zero-array-transformation-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3355-zero-array-transformation-i/) | Medium |
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 | [3643-flip-square-submatrix-vertically](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3643-flip-square-submatrix-vertically/) | Easy |
 | [3660-jump-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3660-jump-game-ix/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
@@ -131,6 +133,7 @@ This project is open source and available for educational purposes.
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 ## Matrix
 | Problem Name | Difficulty |
@@ -174,6 +177,7 @@ This project is open source and available for educational purposes.
 | [1622-fancy-sequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1622-fancy-sequence/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -240,4 +244,8 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
+## Number Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 <!---LeetCode Topics End-->
