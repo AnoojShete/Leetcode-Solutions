@@ -111,6 +111,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
+| [0016-3sum-closest](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0016-3sum-closest/) | Medium |
 | [0048-rotate-image](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0048-rotate-image/) | Medium |
 | [0056-merge-intervals](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0056-merge-intervals/) | Medium |
 | [0198-house-robber](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0198-house-robber/) | Medium |
@@ -165,6 +166,7 @@ This project is open source and available for educational purposes.
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0016-3sum-closest](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0016-3sum-closest/) | Medium |
 | [0056-merge-intervals](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0056-merge-intervals/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 ## Dynamic Programming
@@ -250,6 +252,7 @@ This project is open source and available for educational purposes.
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0016-3sum-closest](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0016-3sum-closest/) | Medium |
 | [0061-rotate-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0061-rotate-list/) | Medium |
 | [0141-linked-list-cycle](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [3643-flip-square-submatrix-vertically](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3643-flip-square-submatrix-vertically/) | Easy |
