@@ -116,6 +116,7 @@ This project is open source and available for educational purposes.
 | [0334-increasing-triplet-subsequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
+| [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
@@ -155,6 +156,7 @@ This project is open source and available for educational purposes.
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [0538-convert-bst-to-greater-tree](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0538-convert-bst-to-greater-tree/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
@@ -241,6 +243,7 @@ This project is open source and available for educational purposes.
 ## Segment Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [1622-fancy-sequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1622-fancy-sequence/) | Hard |
 ## Two Pointers
 | Problem Name | Difficulty |
@@ -266,5 +269,18 @@ This project is open source and available for educational purposes.
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
+## Binary Indexed Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
+## Merge Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
+## Ordered Set
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 <!---LeetCode Topics End-->
