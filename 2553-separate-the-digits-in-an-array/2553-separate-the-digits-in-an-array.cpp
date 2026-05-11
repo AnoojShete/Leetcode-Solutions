@@ -3,12 +3,8 @@ public:
     vector<int> separateDigits(vector<int>& nums) {
         vector<int> ans;
         for(auto num : nums) {
-            stack<int> st;
-            while(num) {
-                st.push(num % 10);
-                num /= 10;
-            }
-            while(!st.empty()) ans.push_back(st.top()), st.pop();
+            string s = to_string(num);
+            for(auto ch : s) ans.push_back(ch - '0');
         }
         return ans;
     }
