@@ -122,6 +122,7 @@ This project is open source and available for educational purposes.
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2381-shifting-letters-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2381-shifting-letters-ii/) | Medium |
@@ -168,6 +169,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0016-3sum-closest](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0016-3sum-closest/) | Medium |
 | [0056-merge-intervals](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0056-merge-intervals/) | Medium |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -210,6 +212,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0334-increasing-triplet-subsequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0670-maximum-swap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0670-maximum-swap/) | Medium |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Prefix Sum
