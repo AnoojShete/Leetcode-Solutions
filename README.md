@@ -72,11 +72,13 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0538-convert-bst-to-greater-tree](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0538-convert-bst-to-greater-tree/) | Medium |
+| [1306-jump-game-iii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
+| [1306-jump-game-iii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 ## Binary Tree
@@ -122,6 +124,7 @@ This project is open source and available for educational purposes.
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
 | [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
+| [1306-jump-game-iii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
