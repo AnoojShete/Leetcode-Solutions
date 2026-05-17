@@ -1,17 +1,15 @@
 class Solution {
+private:
+    vector<bool> vis = vector<bool>(100000, false);
 public:
     bool canReach(vector<int>& arr, int start) {
-        queue<int> q;
-        unordered_set<int> st;
-        q.push(start);
-        st.insert(start);
-        while(!q.empty()) {
-            int idx = q.front(); q.pop();
-            if(arr[idx] == 0) return true;
-            int x = arr[idx];
-            if(idx - x >= 0 && !st.count(idx - x)) q.push(idx - x), st.insert(idx - x);
-            if(idx + x < arr.size() && !st.count(idx + x)) q.push(idx + x), st.insert(idx + x);
-        }
-        return false;
+        vis[start] = true;
+        if(arr[start] == 0) return true;
+        bool op1 = false, op2 = false;
+        if(start - arr[start] >= 0 && !vis[start - arr[start]])
+            op1 = canReach(arr, start - arr[start]);
+        if(start + arr[start] < arr.size() && !vis[start + arr[start]])
+            op2 = canReach(arr, start + arr[start]);
+        return op1 || op2;
     }
 };
