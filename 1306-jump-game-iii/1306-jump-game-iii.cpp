@@ -1,6 +1,6 @@
 class Solution {
 private:
-    vector<bool> vis = vector<bool>(100000, false);
+    vector<bool> vis = vector<bool>(50001, false);
 public:
     bool canReach(vector<int>& arr, int start) {
         vis[start] = true;
