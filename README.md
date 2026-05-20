@@ -135,6 +135,7 @@ This project is open source and available for educational purposes.
 | [2381-shifting-letters-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2381-shifting-letters-ii/) | Medium |
 | [2540-minimum-common-value](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2540-minimum-common-value/) | Easy |
 | [2553-separate-the-digits-in-an-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
+| [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2784-check-if-array-is-good/) | Easy |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3212-count-submatrices-with-equal-frequency-of-x-and-y/) | Medium |
@@ -154,6 +155,7 @@ This project is open source and available for educational purposes.
 | [1345-jump-game-iv](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1345-jump-game-iv/) | Hard |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2540-minimum-common-value](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2540-minimum-common-value/) | Easy |
+| [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2784-check-if-array-is-good/) | Easy |
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
@@ -213,6 +215,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0029-divide-two-integers](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0029-divide-two-integers/) | Medium |
+| [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
