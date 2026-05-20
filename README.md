@@ -157,6 +157,7 @@ This project is open source and available for educational purposes.
 | [2540-minimum-common-value](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2540-minimum-common-value/) | Easy |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2784-check-if-array-is-good/) | Easy |
+| [3543-maximum-weighted-k-edge-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3543-maximum-weighted-k-edge-path/) | Medium |
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
@@ -197,6 +198,7 @@ This project is open source and available for educational purposes.
 | [0788-rotated-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0788-rotated-digits/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
+| [3543-maximum-weighted-k-edge-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3543-maximum-weighted-k-edge-path/) | Medium |
 | [3660-jump-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3660-jump-game-ix/) | Medium |
 ## Math
 | Problem Name | Difficulty |
@@ -252,6 +254,7 @@ This project is open source and available for educational purposes.
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3543-maximum-weighted-k-edge-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3543-maximum-weighted-k-edge-path/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Minimum Spanning Tree
 | Problem Name | Difficulty |
