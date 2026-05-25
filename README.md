@@ -97,6 +97,7 @@ This project is open source and available for educational purposes.
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1784-check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy |
+| [1871-jump-game-vii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1871-jump-game-vii/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2381-shifting-letters-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2381-shifting-letters-ii/) | Medium |
@@ -202,6 +203,7 @@ This project is open source and available for educational purposes.
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
 | [0788-rotated-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0788-rotated-digits/) | Medium |
 | [1340-jump-game-v](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1340-jump-game-v/) | Hard |
+| [1871-jump-game-vii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1871-jump-game-vii/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
 | [3543-maximum-weighted-k-edge-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3543-maximum-weighted-k-edge-path/) | Medium |
@@ -227,6 +229,7 @@ This project is open source and available for educational purposes.
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1871-jump-game-vii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1871-jump-game-vii/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
@@ -245,6 +248,7 @@ This project is open source and available for educational purposes.
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1871-jump-game-vii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1871-jump-game-vii/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [2381-shifting-letters-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2381-shifting-letters-ii/) | Medium |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
