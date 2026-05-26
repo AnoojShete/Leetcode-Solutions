@@ -1,13 +1,11 @@
 class Solution {
 public:
     int numberOfSpecialChars(string word) {
-        int mpp[52] = {0};
+        int a = 0, b = 0;
         for(auto ch : word) {
-            if(islower(ch)) mpp[ch-'a']++;
-            else mpp[ch-'A' + 26]++;
+            if(islower(ch)) a |= (1 << ch-'a');
+            else b |= (1 << ch-'A');
         }
-        int count = 0;
-        for(int i = 0; i < 26; ++i) if(mpp[i] && mpp[i+26]) count++;
-        return count;
+        return __builtin_popcount(a & b);
     }
 };
