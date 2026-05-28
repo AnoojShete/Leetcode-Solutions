@@ -101,6 +101,7 @@ This project is open source and available for educational purposes.
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2381-shifting-letters-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2381-shifting-letters-ii/) | Medium |
+| [3093-longest-common-suffix-queries](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3093-longest-common-suffix-queries/) | Hard |
 | [3120-count-the-number-of-special-characters-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3120-count-the-number-of-special-characters-i/) | Easy |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3121-count-the-number-of-special-characters-ii/) | Medium |
 ## Recursion
@@ -144,6 +145,7 @@ This project is open source and available for educational purposes.
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2784-check-if-array-is-good/) | Easy |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
+| [3093-longest-common-suffix-queries](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3093-longest-common-suffix-queries/) | Hard |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3212-count-submatrices-with-equal-frequency-of-x-and-y/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3355-zero-array-transformation-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3355-zero-array-transformation-i/) | Medium |
@@ -308,6 +310,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
+| [3093-longest-common-suffix-queries](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3093-longest-common-suffix-queries/) | Hard |
 ## Hash Function
 | Problem Name | Difficulty |
 | ------- | ------- |
