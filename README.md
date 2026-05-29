@@ -334,4 +334,8 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
+## Database
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0586-customer-placing-the-largest-number-of-orders](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0586-customer-placing-the-largest-number-of-orders/) | Easy |
 <!---LeetCode Topics End-->
