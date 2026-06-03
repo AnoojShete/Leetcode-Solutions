@@ -90,6 +90,7 @@ This project is open source and available for educational purposes.
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
 | [0093-restore-ip-addresses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0093-restore-ip-addresses/) | Medium |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
 | [0657-robot-return-to-origin](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0657-robot-return-to-origin/) | Easy |
@@ -216,6 +217,7 @@ This project is open source and available for educational purposes.
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
 | [0198-house-robber](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0198-house-robber/) | Medium |
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
 | [0788-rotated-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0788-rotated-digits/) | Medium |
@@ -357,4 +359,8 @@ This project is open source and available for educational purposes.
 | [0596-classes-with-at-least-5-students](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0596-classes-with-at-least-5-students/) | Easy |
 | [1141-user-activity-for-the-past-30-days-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1141-user-activity-for-the-past-30-days-i/) | Easy |
 | [1193-monthly-transactions-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1193-monthly-transactions-i/) | Medium |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
 <!---LeetCode Topics End-->
