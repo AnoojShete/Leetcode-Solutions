@@ -91,6 +91,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
+| [0071-simplify-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0071-simplify-path/) | Medium |
 | [0093-restore-ip-addresses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0093-restore-ip-addresses/) | Medium |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
 | [0657-robot-return-to-origin](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0657-robot-return-to-origin/) | Easy |
@@ -363,4 +364,5 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
+| [0071-simplify-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0071-simplify-path/) | Medium |
 <!---LeetCode Topics End-->
