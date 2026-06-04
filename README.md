@@ -228,6 +228,7 @@ This project is open source and available for educational purposes.
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
 | [3543-maximum-weighted-k-edge-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3543-maximum-weighted-k-edge-path/) | Medium |
 | [3660-jump-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3660-jump-game-ix/) | Medium |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3751-total-waviness-of-numbers-in-range-i/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -242,6 +243,7 @@ This project is open source and available for educational purposes.
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3751-total-waviness-of-numbers-in-range-i/) | Medium |
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -323,6 +325,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3751-total-waviness-of-numbers-in-range-i/) | Medium |
 ## Number Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
