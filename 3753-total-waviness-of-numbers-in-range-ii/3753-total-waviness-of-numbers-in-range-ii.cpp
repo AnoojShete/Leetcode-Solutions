@@ -26,7 +26,6 @@ public:
             bool ntight = tight &&(d == lim);
 
             if(state == 0) {
-                // still no non-leading digit
                 if(d == 0) {
                     Node nxt = dfs(pos + 1, 0, 10, 10, ntight);
                     res.cnt += nxt.cnt;
@@ -38,13 +37,11 @@ public:
                 }
             }
             else if(state == 1) {
-                // exactly one digit so far
                 Node nxt = dfs(pos + 1, 2, last1, d, ntight);
                 res.cnt += nxt.cnt;
                 res.sum += nxt.sum;
             }
             else {
-                // at least two digits so far
                 int add = 0;
 
                 if((last1 > last2 && last1 > d) ||
