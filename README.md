@@ -146,6 +146,7 @@ This project is open source and available for educational purposes.
 | [2381-shifting-letters-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2381-shifting-letters-ii/) | Medium |
 | [2540-minimum-common-value](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2540-minimum-common-value/) | Easy |
 | [2553-separate-the-digits-in-an-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
+| [2574-left-and-right-sum-differences](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2784-check-if-array-is-good/) | Easy |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
@@ -280,6 +281,7 @@ This project is open source and available for educational purposes.
 | [1871-jump-game-vii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1871-jump-game-vii/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [2381-shifting-letters-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2381-shifting-letters-ii/) | Medium |
+| [2574-left-and-right-sum-differences](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3212-count-submatrices-with-equal-frequency-of-x-and-y/) | Medium |
