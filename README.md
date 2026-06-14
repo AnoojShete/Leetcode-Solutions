@@ -86,6 +86,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0200-number-of-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0200-number-of-islands/) | Medium |
+| [0994-rotting-oranges](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
 | [1306-jump-game-iii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1345-jump-game-iv](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1345-jump-game-iv/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
@@ -150,6 +151,7 @@ This project is open source and available for educational purposes.
 | [0436-find-right-interval](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0436-find-right-interval/) | Medium |
 | [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
+| [0994-rotting-oranges](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
 | [1306-jump-game-iii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1340-jump-game-v](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1340-jump-game-v/) | Hard |
 | [1345-jump-game-iv](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1345-jump-game-iv/) | Hard |
@@ -211,6 +213,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0048-rotate-image/) | Medium |
 | [0200-number-of-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0200-number-of-islands/) | Medium |
+| [0994-rotting-oranges](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
