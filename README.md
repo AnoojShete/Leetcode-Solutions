@@ -62,6 +62,7 @@ This project is open source and available for educational purposes.
 | [0061-rotate-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0061-rotate-list/) | Medium |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0141-linked-list-cycle](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -341,6 +342,7 @@ This project is open source and available for educational purposes.
 | [0016-3sum-closest](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0016-3sum-closest/) | Medium |
 | [0061-rotate-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0061-rotate-list/) | Medium |
 | [0141-linked-list-cycle](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2540-minimum-common-value](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2540-minimum-common-value/) | Easy |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
@@ -393,4 +395,5 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
 | [0071-simplify-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0071-simplify-path/) | Medium |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 <!---LeetCode Topics End-->
