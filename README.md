@@ -76,6 +76,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0200-number-of-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0200-number-of-islands/) | Medium |
+| [0207-course-schedule](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0207-course-schedule/) | Medium |
 | [0538-convert-bst-to-greater-tree](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0538-convert-bst-to-greater-tree/) | Medium |
 | [1306-jump-game-iii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
@@ -86,6 +87,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0200-number-of-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0200-number-of-islands/) | Medium |
+| [0207-course-schedule](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0207-course-schedule/) | Medium |
 | [0994-rotting-oranges](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
 | [1306-jump-game-iii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1345-jump-game-iv](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1345-jump-game-iv/) | Hard |
@@ -342,6 +344,7 @@ This project is open source and available for educational purposes.
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0207-course-schedule](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0207-course-schedule/) | Medium |
 | [3543-maximum-weighted-k-edge-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3543-maximum-weighted-k-edge-path/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Minimum Spanning Tree
@@ -423,4 +426,8 @@ This project is open source and available for educational purposes.
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
 | [0071-simplify-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0071-simplify-path/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
+## Topological Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0207-course-schedule](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0207-course-schedule/) | Medium |
 <!---LeetCode Topics End-->
