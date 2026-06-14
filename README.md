@@ -138,6 +138,7 @@ This project is open source and available for educational purposes.
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0198-house-robber](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0198-house-robber/) | Medium |
+| [0219-contains-duplicate-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0334-increasing-triplet-subsequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
@@ -183,6 +184,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
 | [0141-linked-list-cycle](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
+| [0219-contains-duplicate-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
 | [1345-jump-game-iv](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1345-jump-game-iv/) | Hard |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
@@ -276,6 +278,7 @@ This project is open source and available for educational purposes.
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0219-contains-duplicate-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [1871-jump-game-vii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1871-jump-game-vii/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 ## Backtracking
