@@ -101,6 +101,7 @@ This project is open source and available for educational purposes.
 | [0071-simplify-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0071-simplify-path/) | Medium |
 | [0093-restore-ip-addresses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0093-restore-ip-addresses/) | Medium |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
+| [0481-magical-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0481-magical-string/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0657-robot-return-to-origin/) | Easy |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
@@ -342,6 +343,7 @@ This project is open source and available for educational purposes.
 | [0016-3sum-closest](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0016-3sum-closest/) | Medium |
 | [0061-rotate-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0061-rotate-list/) | Medium |
 | [0141-linked-list-cycle](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
+| [0481-magical-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0481-magical-string/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2540-minimum-common-value](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2540-minimum-common-value/) | Easy |
