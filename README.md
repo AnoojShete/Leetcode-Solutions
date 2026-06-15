@@ -62,6 +62,7 @@ This project is open source and available for educational purposes.
 | [0061-rotate-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0061-rotate-list/) | Medium |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0141-linked-list-cycle](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 ## Tree
 | Problem Name | Difficulty |
@@ -372,6 +373,7 @@ This project is open source and available for educational purposes.
 | [0061-rotate-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0061-rotate-list/) | Medium |
 | [0141-linked-list-cycle](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [0481-magical-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0481-magical-string/) | Medium |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2540-minimum-common-value](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2540-minimum-common-value/) | Easy |
