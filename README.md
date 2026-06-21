@@ -164,6 +164,7 @@ This project is open source and available for educational purposes.
 | [1582-special-positions-in-a-binary-matrix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
+| [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2126-destroying-asteroids](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2126-destroying-asteroids/) | Medium |
@@ -248,6 +249,7 @@ This project is open source and available for educational purposes.
 | [0436-find-right-interval](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0436-find-right-interval/) | Medium |
 | [1340-jump-game-v](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1340-jump-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
+| [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [2126-destroying-asteroids](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
@@ -318,6 +320,7 @@ This project is open source and available for educational purposes.
 | [0334-increasing-triplet-subsequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0670-maximum-swap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0670-maximum-swap/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
+| [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [2126-destroying-asteroids](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
@@ -433,4 +436,8 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0207-course-schedule](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0207-course-schedule/) | Medium |
+## Counting Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 <!---LeetCode Topics End-->
