@@ -111,6 +111,7 @@ This project is open source and available for educational purposes.
 | [0424-longest-repeating-character-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0481-magical-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0481-magical-string/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0657-robot-return-to-origin/) | Easy |
+| [1189-maximum-number-of-balloons](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
@@ -201,6 +202,7 @@ This project is open source and available for educational purposes.
 | [0219-contains-duplicate-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
 | [0424-longest-repeating-character-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0424-longest-repeating-character-replacement/) | Medium |
+| [1189-maximum-number-of-balloons](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1345-jump-game-iv](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1345-jump-game-iv/) | Hard |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
@@ -439,5 +441,6 @@ This project is open source and available for educational purposes.
 ## Counting Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1189-maximum-number-of-balloons](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 <!---LeetCode Topics End-->
