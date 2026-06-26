@@ -193,6 +193,7 @@ This project is open source and available for educational purposes.
 | [3660-jump-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3660-jump-game-ix/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
+| [3739-count-subarrays-with-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3739-count-subarrays-with-majority-element-ii/) | Hard |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3838-weighted-word-mapping](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3838-weighted-word-mapping/) | Easy |
 ## Hash Table
@@ -217,6 +218,7 @@ This project is open source and available for educational purposes.
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
+| [3739-count-subarrays-with-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3739-count-subarrays-with-majority-element-ii/) | Hard |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 ## Matrix
 | Problem Name | Difficulty |
@@ -347,6 +349,7 @@ This project is open source and available for educational purposes.
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
 | [3699-number-of-zigzag-arrays-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3699-number-of-zigzag-arrays-i/) | Hard |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
+| [3739-count-subarrays-with-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3739-count-subarrays-with-majority-element-ii/) | Hard |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -378,6 +381,7 @@ This project is open source and available for educational purposes.
 | [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [1622-fancy-sequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1622-fancy-sequence/) | Hard |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
+| [3739-count-subarrays-with-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3739-count-subarrays-with-majority-element-ii/) | Hard |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -416,6 +420,7 @@ This project is open source and available for educational purposes.
 | [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
+| [3739-count-subarrays-with-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3739-count-subarrays-with-majority-element-ii/) | Hard |
 ## Binary Indexed Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -425,6 +430,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
+| [3739-count-subarrays-with-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3739-count-subarrays-with-majority-element-ii/) | Hard |
 ## Ordered Set
 | Problem Name | Difficulty |
 | ------- | ------- |
