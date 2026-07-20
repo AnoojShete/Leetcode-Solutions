@@ -133,6 +133,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0657-robot-return-to-origin](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0657-robot-return-to-origin/) | Easy |
+| [1260-shift-2d-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1260-shift-2d-grid/) | Easy |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2553-separate-the-digits-in-an-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
@@ -158,6 +159,7 @@ This project is open source and available for educational purposes.
 | [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
 | [0994-rotting-oranges](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
+| [1260-shift-2d-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1260-shift-2d-grid/) | Easy |
 | [1306-jump-game-iii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1340-jump-game-v](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1340-jump-game-v/) | Hard |
 | [1345-jump-game-iv](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1345-jump-game-iv/) | Hard |
@@ -226,6 +228,7 @@ This project is open source and available for educational purposes.
 | [0048-rotate-image](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0048-rotate-image/) | Medium |
 | [0200-number-of-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0200-number-of-islands/) | Medium |
 | [0994-rotting-oranges](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
+| [1260-shift-2d-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1260-shift-2d-grid/) | Easy |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
