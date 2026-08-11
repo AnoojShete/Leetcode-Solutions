@@ -143,6 +143,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
+| [0004-median-of-two-sorted-arrays](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
 | [0016-3sum-closest](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0016-3sum-closest/) | Medium |
 | [0033-search-in-rotated-sorted-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0048-rotate-image](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0048-rotate-image/) | Medium |
@@ -245,6 +246,7 @@ This project is open source and available for educational purposes.
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
 | [0033-search-in-rotated-sorted-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
@@ -431,6 +433,7 @@ This project is open source and available for educational purposes.
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
 | [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
