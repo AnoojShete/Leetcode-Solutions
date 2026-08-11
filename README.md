@@ -152,6 +152,7 @@ This project is open source and available for educational purposes.
 | [0198-house-robber](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0198-house-robber/) | Medium |
 | [0200-number-of-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0200-number-of-islands/) | Medium |
 | [0219-contains-duplicate-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0219-contains-duplicate-ii/) | Easy |
+| [0229-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0229-majority-element-ii/) | Medium |
 | [0334-increasing-triplet-subsequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
@@ -205,6 +206,7 @@ This project is open source and available for educational purposes.
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
 | [0141-linked-list-cycle](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [0219-contains-duplicate-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0219-contains-duplicate-ii/) | Easy |
+| [0229-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0229-majority-element-ii/) | Medium |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
 | [0424-longest-repeating-character-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
@@ -257,6 +259,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0016-3sum-closest](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0016-3sum-closest/) | Medium |
 | [0056-merge-intervals](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0056-merge-intervals/) | Medium |
+| [0229-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0229-majority-element-ii/) | Medium |
 | [0436-find-right-interval](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0436-find-right-interval/) | Medium |
 | [1340-jump-game-v](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1340-jump-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
@@ -463,7 +466,12 @@ This project is open source and available for educational purposes.
 ## Counting Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0229-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0229-majority-element-ii/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
+## Boyer–Moore Majority Vote Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0229-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0229-majority-element-ii/) | Medium |
 <!---LeetCode Topics End-->
