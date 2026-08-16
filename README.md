@@ -173,6 +173,7 @@ This project is open source and available for educational purposes.
 | [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
+| [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
 | [2126-destroying-asteroids](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
 | [2161-partition-array-according-to-given-pivot](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
@@ -306,6 +307,7 @@ This project is open source and available for educational purposes.
 | [1344-angle-between-hands-of-a-clock](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1344-angle-between-hands-of-a-clock/) | Medium |
 | [1622-fancy-sequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1622-fancy-sequence/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+| [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
@@ -343,6 +345,7 @@ This project is open source and available for educational purposes.
 | [0670-maximum-swap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0670-maximum-swap/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
+| [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
 | [2126-destroying-asteroids](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
@@ -475,9 +478,26 @@ This project is open source and available for educational purposes.
 | [0229-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0229-majority-element-ii/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
+| [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Boyer–Moore Majority Vote Algorithm
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0229-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0229-majority-element-ii/) | Medium |
+## Minimax
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
+## Game Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
+## Nim Game
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
+## Zero-Sum Game
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
 <!---LeetCode Topics End-->
