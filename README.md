@@ -95,6 +95,7 @@ This project is open source and available for educational purposes.
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3568-minimum-moves-to-clean-the-classroom/) | Medium |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
+| [3905-multi-source-flood-fill](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3905-multi-source-flood-fill/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -208,6 +209,7 @@ This project is open source and available for educational purposes.
 | [3875-construct-uniform-parity-array-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3876-construct-uniform-parity-array-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3876-construct-uniform-parity-array-ii/) | Medium |
 | [3904-smallest-stable-index-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3904-smallest-stable-index-ii/) | Medium |
+| [3905-multi-source-flood-fill](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3905-multi-source-flood-fill/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -251,6 +253,7 @@ This project is open source and available for educational purposes.
 | [3548-equal-sum-grid-partition-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3568-minimum-moves-to-clean-the-classroom/) | Medium |
 | [3643-flip-square-submatrix-vertically](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3643-flip-square-submatrix-vertically/) | Easy |
+| [3905-multi-source-flood-fill](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3905-multi-source-flood-fill/) | Medium |
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
