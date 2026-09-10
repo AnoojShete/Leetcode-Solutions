@@ -70,6 +70,7 @@ This project is open source and available for educational purposes.
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0538-convert-bst-to-greater-tree](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0538-convert-bst-to-greater-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
 ## Depth-First Search
@@ -81,6 +82,7 @@ This project is open source and available for educational purposes.
 | [0538-convert-bst-to-greater-tree](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0538-convert-bst-to-greater-tree/) | Medium |
 | [1306-jump-game-iii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
 ## Breadth-First Search
@@ -102,6 +104,7 @@ This project is open source and available for educational purposes.
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0538-convert-bst-to-greater-tree](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0538-convert-bst-to-greater-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
+| [2265-count-nodes-equal-to-average-of-subtree](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
