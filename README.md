@@ -482,6 +482,7 @@ This project is open source and available for educational purposes.
 | [0596-classes-with-at-least-5-students](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0596-classes-with-at-least-5-students/) | Easy |
 | [1141-user-activity-for-the-past-30-days-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1141-user-activity-for-the-past-30-days-i/) | Easy |
 | [1193-monthly-transactions-i](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1193-monthly-transactions-i/) | Medium |
+| [1280-students-and-examinations](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1280-students-and-examinations/) | Easy |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
