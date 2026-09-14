@@ -321,6 +321,7 @@ This project is open source and available for educational purposes.
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0007-reverse-integer](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0007-reverse-integer/) | Medium |
 | [0029-divide-two-integers](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0029-divide-two-integers/) | Medium |
 | [0048-rotate-image](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0048-rotate-image/) | Medium |
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
