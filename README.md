@@ -366,6 +366,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
+| [0077-combinations](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0077-combinations/) | Medium |
 | [0093-restore-ip-addresses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0093-restore-ip-addresses/) | Medium |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
