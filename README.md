@@ -63,6 +63,7 @@ This project is open source and available for educational purposes.
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0141-linked-list-cycle](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [0622-design-circular-queue](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0622-design-circular-queue/) | Medium |
+| [1019-next-greater-node-in-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1019-next-greater-node-in-linked-list/) | Medium |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 ## Tree
@@ -174,6 +175,7 @@ This project is open source and available for educational purposes.
 | [0835-image-overlap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0835-image-overlap/) | Medium |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
 | [0994-rotting-oranges](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
+| [1019-next-greater-node-in-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1019-next-greater-node-in-linked-list/) | Medium |
 | [1260-shift-2d-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1260-shift-2d-grid/) | Easy |
 | [1306-jump-game-iii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1340-jump-game-v](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1340-jump-game-v/) | Hard |
@@ -519,6 +521,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
 | [0071-simplify-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0071-simplify-path/) | Medium |
+| [1019-next-greater-node-in-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1019-next-greater-node-in-linked-list/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 ## Topological Sort
 | Problem Name | Difficulty |
@@ -568,4 +571,8 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1668-maximum-repeating-substring](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1668-maximum-repeating-substring/) | Easy |
+## Monotonic Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1019-next-greater-node-in-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1019-next-greater-node-in-linked-list/) | Medium |
 <!---LeetCode Topics End-->
