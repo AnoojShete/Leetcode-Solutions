@@ -177,6 +177,7 @@ This project is open source and available for educational purposes.
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
+| [1705-maximum-number-of-eaten-apples](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1705-maximum-number-of-eaten-apples/) | Medium |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
 | [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
@@ -380,6 +381,7 @@ This project is open source and available for educational purposes.
 | [0334-increasing-triplet-subsequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0670-maximum-swap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0670-maximum-swap/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
+| [1705-maximum-number-of-eaten-apples](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1705-maximum-number-of-eaten-apples/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
 | [2126-destroying-asteroids](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2126-destroying-asteroids/) | Medium |
@@ -424,6 +426,7 @@ This project is open source and available for educational purposes.
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1705-maximum-number-of-eaten-apples](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1705-maximum-number-of-eaten-apples/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 ## Design
