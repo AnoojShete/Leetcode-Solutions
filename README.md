@@ -123,6 +123,7 @@ This project is open source and available for educational purposes.
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [1507-reformat-date](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1507-reformat-date/) | Easy |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+| [1668-maximum-repeating-substring](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1668-maximum-repeating-substring/) | Easy |
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1784-check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy |
 | [1871-jump-game-vii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1871-jump-game-vii/) | Medium |
@@ -314,6 +315,7 @@ This project is open source and available for educational purposes.
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
 | [0788-rotated-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0788-rotated-digits/) | Medium |
 | [1340-jump-game-v](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1340-jump-game-v/) | Hard |
+| [1668-maximum-repeating-substring](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1668-maximum-repeating-substring/) | Easy |
 | [1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible/) | Hard |
 | [1871-jump-game-vii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1871-jump-game-vii/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
@@ -562,4 +564,8 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0622-design-circular-queue](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0622-design-circular-queue/) | Medium |
+## String Matching
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1668-maximum-repeating-substring](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1668-maximum-repeating-substring/) | Easy |
 <!---LeetCode Topics End-->
