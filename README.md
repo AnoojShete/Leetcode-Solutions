@@ -115,6 +115,7 @@ This project is open source and available for educational purposes.
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
 | [0071-simplify-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0071-simplify-path/) | Medium |
 | [0093-restore-ip-addresses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0093-restore-ip-addresses/) | Medium |
+| [0316-remove-duplicate-letters](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0316-remove-duplicate-letters/) | Medium |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
 | [0424-longest-repeating-character-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0481-magical-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0481-magical-string/) | Medium |
@@ -388,6 +389,7 @@ This project is open source and available for educational purposes.
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0316-remove-duplicate-letters](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0316-remove-duplicate-letters/) | Medium |
 | [0334-increasing-triplet-subsequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0670-maximum-swap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0670-maximum-swap/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
@@ -525,6 +527,7 @@ This project is open source and available for educational purposes.
 | ------- | ------- |
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
 | [0071-simplify-path](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0071-simplify-path/) | Medium |
+| [0316-remove-duplicate-letters](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0316-remove-duplicate-letters/) | Medium |
 | [1019-next-greater-node-in-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1019-next-greater-node-in-linked-list/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 ## Topological Sort
@@ -578,6 +581,7 @@ This project is open source and available for educational purposes.
 ## Monotonic Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0316-remove-duplicate-letters](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0316-remove-duplicate-letters/) | Medium |
 | [1019-next-greater-node-in-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1019-next-greater-node-in-linked-list/) | Medium |
 ## Pigeonhole Principle
 | Problem Name | Difficulty |
