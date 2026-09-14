@@ -142,6 +142,7 @@ This project is open source and available for educational purposes.
 | [0657-robot-return-to-origin](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0657-robot-return-to-origin/) | Easy |
 | [1260-shift-2d-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1260-shift-2d-grid/) | Easy |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+| [2043-simple-bank-system](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2043-simple-bank-system/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2553-separate-the-digits-in-an-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
 | [3838-weighted-word-mapping](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3838-weighted-word-mapping/) | Easy |
@@ -181,6 +182,7 @@ This project is open source and available for educational purposes.
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
+| [2043-simple-bank-system](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2043-simple-bank-system/) | Medium |
 | [2126-destroying-asteroids](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
 | [2161-partition-array-according-to-given-pivot](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
@@ -231,6 +233,7 @@ This project is open source and available for educational purposes.
 | [1345-jump-game-iv](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1345-jump-game-iv/) | Hard |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1980-find-unique-binary-string/) | Medium |
+| [2043-simple-bank-system](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2043-simple-bank-system/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2540-minimum-common-value](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2540-minimum-common-value/) | Easy |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
@@ -427,6 +430,7 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1622-fancy-sequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1622-fancy-sequence/) | Hard |
+| [2043-simple-bank-system](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2043-simple-bank-system/) | Medium |
 ## Segment Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
