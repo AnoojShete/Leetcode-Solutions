@@ -10,18 +10,24 @@
  */
 class Solution {
 public:
+    ListNode* rev(ListNode* head) {
+        if(!head || !head->next) return head;
+        ListNode* node = rev(head->next);
+        head->next->next = head;
+        head->next = nullptr;
+        return node;
+    }
     vector<int> nextLargerNodes(ListNode* head) {
-        vector<int> ans, st;
-        for(ListNode* node = head; node; node = node->next) {
-            // Creating a decreasing order stack -> monotonic stack
-            while(st.size() && ans[st.back()] < node->val) {
-                ans[st.back()] = node->val;
-                st.pop_back();
-            }
-            st.push_back(ans.size());
-            ans.push_back(node->val);
+        vector<int> ans;
+        ListNode* curr = rev(head);
+        stack<int> st;
+        while(curr) {
+            while(!st.empty() && st.top() <= curr->val) st.pop();
+            ans.push_back(st.empty() ? 0 : st.top());
+            st.push(curr->val);
+            curr = curr->next;
         }
-        for(int i : st) ans[i] = 0;
+        reverse(ans.begin(), ans.end());
         return ans;
     }
 };
