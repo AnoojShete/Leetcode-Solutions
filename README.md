@@ -325,6 +325,7 @@ This project is open source and available for educational purposes.
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
 | [0670-maximum-swap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0670-maximum-swap/) | Medium |
 | [0788-rotated-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0788-rotated-digits/) | Medium |
+| [0836-rectangle-overlap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0836-rectangle-overlap/) | Easy |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
 | [1344-angle-between-hands-of-a-clock](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1344-angle-between-hands-of-a-clock/) | Medium |
 | [1622-fancy-sequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1622-fancy-sequence/) | Hard |
@@ -534,4 +535,8 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2029-stone-game-ix](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2029-stone-game-ix/) | Medium |
+## Geometry
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0836-rectangle-overlap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0836-rectangle-overlap/) | Easy |
 <!---LeetCode Topics End-->
