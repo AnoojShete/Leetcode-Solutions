@@ -62,6 +62,7 @@ This project is open source and available for educational purposes.
 | [0061-rotate-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0061-rotate-list/) | Medium |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0117-populating-next-right-pointers-in-each-node-ii/) | Medium |
 | [0141-linked-list-cycle](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
+| [0622-design-circular-queue](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0622-design-circular-queue/) | Medium |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 ## Tree
@@ -167,6 +168,7 @@ This project is open source and available for educational purposes.
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
 | [0436-find-right-interval](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0436-find-right-interval/) | Medium |
 | [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
+| [0622-design-circular-queue](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0622-design-circular-queue/) | Medium |
 | [0835-image-overlap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0835-image-overlap/) | Medium |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
 | [0994-rotting-oranges](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
@@ -432,6 +434,7 @@ This project is open source and available for educational purposes.
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0622-design-circular-queue](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0622-design-circular-queue/) | Medium |
 | [1622-fancy-sequence](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1622-fancy-sequence/) | Hard |
 | [2043-simple-bank-system](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2043-simple-bank-system/) | Medium |
 ## Segment Tree
@@ -554,4 +557,8 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1866-number-of-ways-to-rearrange-sticks-with-k-sticks-visible/) | Hard |
+## Queue
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0622-design-circular-queue](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0622-design-circular-queue/) | Medium |
 <!---LeetCode Topics End-->
