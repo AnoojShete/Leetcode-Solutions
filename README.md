@@ -171,6 +171,7 @@ This project is open source and available for educational purposes.
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
 | [0436-find-right-interval](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0436-find-right-interval/) | Medium |
 | [0493-reverse-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0493-reverse-pairs/) | Hard |
+| [0523-continuous-subarray-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0523-continuous-subarray-sum/) | Medium |
 | [0622-design-circular-queue](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0622-design-circular-queue/) | Medium |
 | [0835-image-overlap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0835-image-overlap/) | Medium |
 | [0932-beautiful-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0932-beautiful-array/) | Medium |
@@ -236,6 +237,7 @@ This project is open source and available for educational purposes.
 | [0229-majority-element-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0229-majority-element-ii/) | Medium |
 | [0336-palindrome-pairs](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0336-palindrome-pairs/) | Hard |
 | [0424-longest-repeating-character-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0424-longest-repeating-character-replacement/) | Medium |
+| [0523-continuous-subarray-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0523-continuous-subarray-sum/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1345-jump-game-iv](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1345-jump-game-iv/) | Hard |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
@@ -336,6 +338,7 @@ This project is open source and available for educational purposes.
 | [0029-divide-two-integers](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0029-divide-two-integers/) | Medium |
 | [0048-rotate-image](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0048-rotate-image/) | Medium |
 | [0396-rotate-function](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0396-rotate-function/) | Medium |
+| [0523-continuous-subarray-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0523-continuous-subarray-sum/) | Medium |
 | [0670-maximum-swap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0670-maximum-swap/) | Medium |
 | [0788-rotated-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0788-rotated-digits/) | Medium |
 | [0836-rectangle-overlap](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0836-rectangle-overlap/) | Easy |
@@ -401,6 +404,7 @@ This project is open source and available for educational purposes.
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0523-continuous-subarray-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0523-continuous-subarray-sum/) | Medium |
 | [1871-jump-game-vii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1871-jump-game-vii/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [2381-shifting-letters-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2381-shifting-letters-ii/) | Medium |
@@ -575,4 +579,8 @@ This project is open source and available for educational purposes.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1019-next-greater-node-in-linked-list](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1019-next-greater-node-in-linked-list/) | Medium |
+## Pigeonhole Principle
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0523-continuous-subarray-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0523-continuous-subarray-sum/) | Medium |
 <!---LeetCode Topics End-->
