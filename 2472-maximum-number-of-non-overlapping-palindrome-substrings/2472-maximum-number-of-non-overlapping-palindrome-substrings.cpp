@@ -10,16 +10,13 @@ public:
             }
         }
         int dp[2001];
-        memset(dp, -1, sizeof dp);
-        function<int(int)> solve = [&](int i) -> int {
-            if(i == n) return 0;
-            if(dp[i] != -1) return dp[i];
-            int ans = solve(i + 1);
-            for(int j = i + k - 1; j < n; ++j) {
-                if(isValid[i][j]) ans = max(ans, 1 + solve(j + 1));
+        dp[n] = 0;
+        for(int i = n-1; i >= 0; --i) {
+            dp[i] = dp[i+1];
+            for(int j = i+k-1; j < n; ++j) {
+                if(isValid[i][j]) dp[i] = max(dp[i], 1 + dp[j + 1]);
             }
-            return dp[i] = ans;
-        };
-        return solve(0);
+        }
+        return dp[0];
     }
 };
