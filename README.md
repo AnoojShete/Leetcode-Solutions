@@ -2,13 +2,23 @@
 
 ## Stats
 
-| Difficulty | Solved |
+| Metric | Count |
 |---|---:|
-| Easy | — |
-| Medium | — |
-| Hard | — |
-| **Total** | **—** |
+| **Total Problems** | **566** |
 
+### Solutions by Language
+
+| Language | Solutions |
+|---|---:|
+| C++ | 504 |
+| Python | 6 |
+| Java | 6 |
+| JavaScript | 49 |
+| Go | 13 |
+| C# | 1 |
+| SQL | 12 |
+| Bash | 2 |
+| C | 1 |
 ## Solutions by Language
 
 | Language | Problems |
