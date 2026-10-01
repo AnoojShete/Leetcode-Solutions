@@ -5,33 +5,21 @@
 | Metric | Count |
 |---|---:|
 | **Total Problems** | **566** |
+## Solutions by Language
 
-### Solutions by Language
-
-| Language | Solutions |
+| **Language** | **Problems** |
 |---|---:|
-| C++ | 504 |
+| C++ | 506 |
+| JavaScript | 49 |
 | Python | 6 |
 | Java | 6 |
-| JavaScript | 49 |
 | Go | 13 |
 | C# | 1 |
 | SQL | 12 |
 | Bash | 2 |
+| TypeScript | 0 |
+| Rust | 0 |
 | C | 1 |
-## Solutions by Language
-
-| Language | Problems |
-|---|---:|
-| C++ | — |
-| JavaScript | — |
-| Python | — |
-| Java | — |
-| Go | — |
-| C# | — |
-| SQL | — |
-| Bash | — |
-
 ## Topics
 
 Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · Greedy · Backtracking · Binary Search · Sliding Window · Bit Manipulation · Union Find

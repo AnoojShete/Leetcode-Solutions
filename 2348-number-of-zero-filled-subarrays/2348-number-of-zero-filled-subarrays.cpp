@@ -1,14 +1,16 @@
 class Solution {
 public:
     long long zeroFilledSubarray(vector<int>& arr) {
-        long long res = 0;
+        long long ans = 0;
+        unordered_map<int, int> mpp;
         int n = arr.size();
-        for(int i = 0, j = 0; i < n; i++) {
-            if(arr[i] != 0) {
-                j = i + 1;
-            }
-            res += i - j + 1;
+        int sum = 0;
+        for(int i = 0; i < n; i++) {
+            sum += arr[i];
+            if(sum == 0) ans++;
+            if(mpp.find(sum) != mpp.end() && arr[i] >= 0 && sum >= 0) ans += mpp[sum];
+            mpp[sum]++;
         }
-        return res;
+        return ans;
     }
 };
