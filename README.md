@@ -18,7 +18,7 @@
 | SQL | 12 |
 | Bash | 2 |
 | TypeScript | 0 |
-| Rust | 0 |
+| Rust | 1 |
 | C | 1 |
 ## Topics
 
