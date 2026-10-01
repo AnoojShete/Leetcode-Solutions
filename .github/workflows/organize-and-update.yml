@@ -1,0 +1,280 @@
+name: Organize Solutions and Update README
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  organize-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Organize misplaced solution files
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          import subprocess
+          import shutil
+
+          root = Path(".")
+
+          # Files that should never be moved
+          ignored_files = {
+              "README.md",
+              "LICENSE",
+              ".gitignore",
+          }
+
+          # Supported solution extensions
+          solution_extensions = {
+              ".cpp",
+              ".cc",
+              ".cxx",
+              ".c",
+              ".py",
+              ".java",
+              ".js",
+              ".ts",
+              ".go",
+              ".cs",
+              ".rs",
+              ".sql",
+              ".sh",
+          }
+
+          # Problem filename:
+          # 0057-insert-interval.cpp
+          problem_pattern = re.compile(
+              r"^(\d{4,}-[^/]+)(\.[^.]+)$"
+          )
+
+          def git_timestamp(path):
+              """
+              Return the timestamp of the most recent commit
+              that modified this path.
+              """
+              try:
+                  result = subprocess.run(
+                      [
+                          "git",
+                          "log",
+                          "-1",
+                          "--format=%ct",
+                          "--",
+                          str(path)
+                      ],
+                      capture_output=True,
+                      text=True,
+                      check=True
+                  )
+
+                  value = result.stdout.strip()
+
+                  if value:
+                      return int(value)
+
+              except subprocess.CalledProcessError:
+                  pass
+
+              # Untracked/new files get current timestamp
+              return 0
+
+          moved = 0
+          removed = 0
+
+          for file in root.iterdir():
+
+              if not file.is_file():
+                  continue
+
+              if file.name in ignored_files:
+                  continue
+
+              if file.suffix.lower() not in solution_extensions:
+                  continue
+
+              match = problem_pattern.match(file.name)
+
+              if not match:
+                  continue
+
+              problem_folder = match.group(1)
+              destination_dir = root / problem_folder
+
+              # Only organize files when their problem folder exists.
+              if not destination_dir.is_dir():
+                  continue
+
+              destination = destination_dir / file.name
+
+              # File is already where it belongs
+              if destination.exists():
+
+                  root_time = git_timestamp(file)
+                  folder_time = git_timestamp(destination)
+
+                  if root_time > folder_time:
+                      print(
+                          f"Replacing older folder version: "
+                          f"{destination} <- {file}"
+                      )
+
+                      destination.unlink()
+                      shutil.move(str(file), str(destination))
+                      moved += 1
+
+                  else:
+                      print(
+                          f"Keeping newer folder version: "
+                          f"{destination}"
+                      )
+
+                      file.unlink()
+                      removed += 1
+
+              else:
+                  print(f"Moving: {file} -> {destination}")
+
+                  shutil.move(str(file), str(destination))
+                  moved += 1
+
+          print()
+          print(f"Files moved/replaced: {moved}")
+          print(f"Duplicate files removed: {removed}")
+
+      - name: Update README metrics
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          root = Path(".")
+
+          languages = {
+              ".cpp": "C++",
+              ".cc": "C++",
+              ".cxx": "C++",
+              ".c": "C",
+              ".py": "Python",
+              ".java": "Java",
+              ".js": "JavaScript",
+              ".ts": "TypeScript",
+              ".go": "Go",
+              ".cs": "C#",
+              ".rs": "Rust",
+              ".sql": "SQL",
+              ".sh": "Bash",
+          }
+
+          ignored_dirs = {
+              ".git",
+              ".github",
+              "node_modules",
+          }
+
+          problem_pattern = re.compile(r"^\d{4,}-")
+
+          problems = set()
+          language_counts = {}
+
+          for directory in root.iterdir():
+
+              if not directory.is_dir():
+                  continue
+
+              if directory.name in ignored_dirs:
+                  continue
+
+              if not problem_pattern.match(directory.name):
+                  continue
+
+              # One folder = one problem
+              problems.add(directory.name)
+
+              for file in directory.iterdir():
+
+                  if not file.is_file():
+                      continue
+
+                  if file.name.lower() == "readme.md":
+                      continue
+
+                  language = languages.get(file.suffix.lower())
+
+                  if language:
+                      language_counts[language] = (
+                          language_counts.get(language, 0) + 1
+                      )
+
+          total = len(problems)
+
+          language_table = "\n".join(
+              f"| {language} | {count} |"
+              for language, count
+              in sorted(language_counts.items())
+          )
+
+          stats = f"""## Stats
+
+          | Metric | Count |
+          |---|---:|
+          | **Total Problems** | **{total}** |
+
+          ### Solutions by Language
+
+          | Language | Solutions |
+          |---|---:|
+          {language_table}
+          """
+
+          readme = root / "README.md"
+
+          if not readme.exists():
+              raise SystemExit("README.md does not exist")
+
+          content = readme.read_text(encoding="utf-8")
+
+          pattern = r"## Stats\n.*?(?=\n## |\Z)"
+
+          new_content = re.sub(
+              pattern,
+              stats.strip(),
+              content,
+              count=1,
+              flags=re.DOTALL
+          )
+
+          if new_content == content:
+              print("README stats already up to date.")
+          else:
+              readme.write_text(
+                  new_content.rstrip() + "\n",
+                  encoding="utf-8"
+              )
+
+              print("README stats updated.")
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: organize solutions and update stats"
+          git push

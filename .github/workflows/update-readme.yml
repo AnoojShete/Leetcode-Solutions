@@ -1,0 +1,146 @@
+name: Update README Stats
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update README stats
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          root = Path(".")
+
+          # Language extensions
+          languages = {
+              ".cpp": "C++",
+              ".cc": "C++",
+              ".cxx": "C++",
+              ".py": "Python",
+              ".java": "Java",
+              ".js": "JavaScript",
+              ".ts": "TypeScript",
+              ".go": "Go",
+              ".cs": "C#",
+              ".sql": "SQL",
+              ".sh": "Bash",
+              ".c": "C",
+              ".rs": "Rust",
+          }
+
+          # Ignore non-solution files/directories
+          ignored_dirs = {
+              ".git",
+              ".github",
+              "node_modules",
+          }
+
+          # Problem directories are named like:
+          # 0001-two-sum
+          # 0322-coin-change
+          problem_pattern = re.compile(r"^\d{4,}-")
+
+          problems = set()
+          language_counts = {name: 0 for name in languages.values()}
+
+          for path in root.iterdir():
+
+              if not path.is_dir() or path.name in ignored_dirs:
+                  continue
+
+              if not problem_pattern.match(path.name):
+                  continue
+
+              # One directory = one LeetCode problem
+              problems.add(path.name)
+
+              for file in path.rglob("*"):
+                  if not file.is_file():
+                      continue
+
+                  # Don't count README.md as a solution
+                  if file.name.lower() == "readme.md":
+                      continue
+
+                  language = languages.get(file.suffix.lower())
+
+                  if language:
+                      language_counts[language] += 1
+
+          total = len(problems)
+
+          # Remove languages with zero solutions
+          language_counts = {
+              lang: count
+              for lang, count in language_counts.items()
+              if count > 0
+          }
+
+          language_table = "\n".join(
+              f"| {lang} | {count} |"
+              for lang, count in language_counts.items()
+          )
+
+          stats = f"""## Stats
+
+          | Metric | Count |
+          |---|---:|
+          | **Total Problems** | **{total}** |
+
+          ### Solutions by Language
+
+          | Language | Solutions |
+          |---|---:|
+          {language_table}
+          """
+
+          readme = Path("README.md")
+
+          if not readme.exists():
+              raise SystemExit("README.md not found")
+
+          content = readme.read_text(encoding="utf-8")
+
+          # Replace everything from ## Stats until the next ## heading.
+          pattern = r"## Stats\n.*?(?=\n## |\Z)"
+
+          new_content = re.sub(
+              pattern,
+              stats.strip(),
+              content,
+              flags=re.DOTALL
+          )
+
+          if new_content == content:
+              print("README already up to date.")
+          else:
+              readme.write_text(new_content + "\n", encoding="utf-8")
+              print("README stats updated.")
+
+      - name: Commit README changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No README changes."
+            exit 0
+          fi
+
+          git commit -m "docs: update README stats"
+          git push
