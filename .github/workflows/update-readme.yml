@@ -165,41 +165,31 @@ jobs:
           print(f"Files moved/replaced: {moved}")
           print(f"Duplicate files removed: {removed}")
 
-      - name: Update README metrics
+            - name: Generate README
         shell: python
         run: |
           from pathlib import Path
-          import re
 
-          root = Path("README.md")
+          template = Path("README.template.md")
+          readme = Path("README.md")
 
           languages = {
-              ".cpp": "C++",
-              ".cc": "C++",
-              ".cxx": "C++",
-              ".c": "C",
-              ".py": "Python",
-              ".java": "Java",
-              ".js": "JavaScript",
-              ".ts": "TypeScript",
-              ".go": "Go",
-              ".cs": "C#",
-              ".rs": "Rust",
+              ".cpp": "CPP",
+              ".cc": "CPP",
+              ".cxx": "CPP",
+              ".py": "PYTHON",
+              ".java": "JAVA",
+              ".js": "JAVASCRIPT",
+              ".ts": "TYPESCRIPT",
+              ".go": "GO",
+              ".cs": "CSHARP",
+              ".rs": "RUST",
               ".sql": "SQL",
-              ".sh": "Bash",
+              ".sh": "BASH",
+              ".c": "C",
           }
-
-          ignored_dirs = {
-              ".git",
-              ".github",
-              "node_modules",
-          }
-
-          problem_pattern = re.compile(r"^\d{4,}-")
 
           problems = set()
-
-          # language -> set of problems
           language_problems = {}
 
           for directory in Path(".").iterdir():
@@ -207,14 +197,27 @@ jobs:
               if not directory.is_dir():
                   continue
 
-              if directory.name in ignored_dirs:
+              if directory.name in {
+                  ".git",
+                  ".github",
+                  "node_modules",
+              }:
                   continue
 
-              if not problem_pattern.match(directory.name):
+              # Only folders like:
+              # 0001-two-sum
+              # 1234-example-problem
+              if len(directory.name) < 6:
                   continue
 
-              problem_name = directory.name
-              problems.add(problem_name)
+              if not directory.name[:4].isdigit():
+                  continue
+
+              if directory.name[4] != "-":
+                  continue
+
+              problem = directory.name
+              problems.add(problem)
 
               for file in directory.iterdir():
 
@@ -224,109 +227,54 @@ jobs:
                   if file.name.lower() == "readme.md":
                       continue
 
-                  language = languages.get(file.suffix.lower())
+                  language = languages.get(
+                      file.suffix.lower()
+                  )
 
                   if language:
                       language_problems.setdefault(
                           language, set()
-                      ).add(problem_name)
+                      ).add(problem)
 
-          total = len(problems)
+          values = {
+              "TOTAL": len(problems),
+              "CPP": len(language_problems.get("CPP", set())),
+              "JAVASCRIPT": len(language_problems.get("JAVASCRIPT", set())),
+              "PYTHON": len(language_problems.get("PYTHON", set())),
+              "JAVA": len(language_problems.get("JAVA", set())),
+              "GO": len(language_problems.get("GO", set())),
+              "CSHARP": len(language_problems.get("CSHARP", set())),
+              "SQL": len(language_problems.get("SQL", set())),
+              "BASH": len(language_problems.get("BASH", set())),
+              "TYPESCRIPT": len(language_problems.get("TYPESCRIPT", set())),
+              "RUST": len(language_problems.get("RUST", set())),
+              "C": len(language_problems.get("C", set())),
+          }
 
-          language_order = [
-              "C++",
-              "JavaScript",
-              "Python",
-              "Java",
-              "Go",
-              "C#",
-              "SQL",
-              "Bash",
-              "TypeScript",
-              "Rust",
-              "C",
-          ]
-
-          language_rows = []
-
-          for language in language_order:
-
-              count = len(
-                  language_problems.get(language, set())
-              )
-
-              language_rows.append(
-                  f"| {language} | {count} |"
-              )
-
-          language_table = "\n".join(language_rows)
-
-          content = root.read_text(encoding="utf-8")
-
-          # ---------------------------------------
-          # Update total problems
-          # ---------------------------------------
-
-          stats_pattern = re.compile(
-              r"## Stats\n.*?(?=\n## |\Z)",
-              re.DOTALL
+          # IMPORTANT:
+          # README.md is completely rebuilt from the template.
+          # Anything added by LeetHub to README.md is discarded.
+          content = template.read_text(
+              encoding="utf-8"
           )
 
-          stats = f"""## Stats
-
-          | Metric | Count |
-          |---|---:|
-          | **Total Problems** | **{total}** |
-          """
-
-          content = stats_pattern.sub(
-              stats.strip(),
-              content,
-              count=1
-          )
-
-          # ---------------------------------------
-          # Update language table
-          # ---------------------------------------
-
-          language_pattern = re.compile(
-              r"## Solutions by Language\n.*?(?=\n## |\Z)",
-              re.DOTALL
-          )
-
-          language_section = f"""## Solutions by Language
-
-          | **Language** | **Problems** |
-          |---|---:|
-          {language_table}
-          """
-
-          if re.search(
-              r"## Solutions by Language",
-              content
-          ):
-              content = language_pattern.sub(
-                  language_section.strip(),
-                  content,
-                  count=1
+          for key, value in values.items():
+              content = content.replace(
+                  "{{" + key + "}}",
+                  str(value)
               )
-          else:
-              content += "\n\n" + language_section.strip()
 
-          root.write_text(
+          readme.write_text(
               content.rstrip() + "\n",
               encoding="utf-8"
           )
 
-          print(f"Total problems: {total}")
+          print("README completely regenerated.")
           print()
-          print("Problems by language:")
+          print(f"Total problems: {values['TOTAL']}")
 
-          for language in language_order:
-              print(
-                  f"{language}: "
-                  f"{len(language_problems.get(language, set()))}"
-              )
+          for key, value in values.items():
+              print(f"{key}: {value}")
 
       - name: Commit changes
         run: |
