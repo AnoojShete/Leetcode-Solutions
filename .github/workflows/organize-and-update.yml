@@ -1,42 +1,38 @@
-name: Organize Solutions and Update README
+name: Organize LeetCode Solutions
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: organize-solutions
+  cancel-in-progress: false
+
 jobs:
-  organize-and-update:
+  organize:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Organize misplaced solution files
+      - name: Organize root solution files
         shell: python
         run: |
           from pathlib import Path
-          import re
           import subprocess
           import shutil
 
           root = Path(".")
 
-          # Files that should never be moved
-          ignored_files = {
-              "README.md",
-              "LICENSE",
-              ".gitignore",
-          }
-
-          # Supported solution extensions
-          solution_extensions = {
+          extensions = {
               ".cpp",
               ".cc",
               ".cxx",
@@ -52,17 +48,11 @@ jobs:
               ".sh",
           }
 
-          # Problem filename:
-          # 0057-insert-interval.cpp
-          problem_pattern = re.compile(
-              r"^(\d{4,}-[^/]+)(\.[^.]+)$"
-          )
+          ignored = {
+              "README.md",
+          }
 
-          def git_timestamp(path):
-              """
-              Return the timestamp of the most recent commit
-              that modified this path.
-              """
+          def git_time(path):
               try:
                   result = subprocess.run(
                       [
@@ -80,189 +70,113 @@ jobs:
 
                   value = result.stdout.strip()
 
-                  if value:
-                      return int(value)
+                  return int(value) if value else 0
 
-              except subprocess.CalledProcessError:
-                  pass
-
-              # Untracked/new files get current timestamp
-              return 0
+              except Exception:
+                  return 0
 
           moved = 0
-          removed = 0
+          deleted = 0
 
-          for file in root.iterdir():
+          # Only inspect files directly in repository root
+          for file in list(root.iterdir()):
 
               if not file.is_file():
                   continue
 
-              if file.name in ignored_files:
+              if file.name in ignored:
                   continue
 
-              if file.suffix.lower() not in solution_extensions:
+              if file.suffix.lower() not in extensions:
                   continue
 
-              match = problem_pattern.match(file.name)
-
-              if not match:
+              # Only LeetCode-style files:
+              # 0001-two-sum.cpp
+              # 0421-maximum-xor.js
+              if not file.name[:4].isdigit():
                   continue
 
-              problem_folder = match.group(1)
-              destination_dir = root / problem_folder
+              # Folder name = filename without extension
+              folder_name = file.stem
 
-              # Only organize files when their problem folder exists.
-              if not destination_dir.is_dir():
+              # Make sure it actually looks like:
+              # 0001-two-sum
+              if len(folder_name) < 6:
                   continue
 
-              destination = destination_dir / file.name
+              if folder_name[4] != "-":
+                  continue
 
-              # File is already where it belongs
+              folder = root / folder_name
+              destination = folder / file.name
+
+              print()
+              print(f"Processing: {file}")
+              print(f"Target folder: {folder}")
+
+              # Folder doesn't exist -> create it
+              if not folder.exists():
+                  folder.mkdir(parents=True)
+
+                  shutil.move(
+                      str(file),
+                      str(destination)
+                  )
+
+                  print(f"Moved -> {destination}")
+
+                  moved += 1
+                  continue
+
+              # Folder already exists
               if destination.exists():
 
-                  root_time = git_timestamp(file)
-                  folder_time = git_timestamp(destination)
+                  root_time = git_time(file)
+                  existing_time = git_time(destination)
 
-                  if root_time > folder_time:
-                      print(
-                          f"Replacing older folder version: "
-                          f"{destination} <- {file}"
-                      )
+                  print(f"Root file timestamp: {root_time}")
+                  print(f"Existing timestamp:  {existing_time}")
+
+                  if root_time > existing_time:
+
+                      print("Root version is newer.")
+                      print("Replacing existing version.")
 
                       destination.unlink()
-                      shutil.move(str(file), str(destination))
+
+                      shutil.move(
+                          str(file),
+                          str(destination)
+                      )
+
                       moved += 1
 
                   else:
-                      print(
-                          f"Keeping newer folder version: "
-                          f"{destination}"
-                      )
+
+                      print("Existing version is newer.")
+                      print("Removing duplicate root file.")
 
                       file.unlink()
-                      removed += 1
+
+                      deleted += 1
 
               else:
-                  print(f"Moving: {file} -> {destination}")
 
-                  shutil.move(str(file), str(destination))
+                  # Folder exists but this language/file doesn't
+                  shutil.move(
+                      str(file),
+                      str(destination)
+                  )
+
+                  print(f"Moved -> {destination}")
+
                   moved += 1
 
           print()
-          print(f"Files moved/replaced: {moved}")
-          print(f"Duplicate files removed: {removed}")
-
-      - name: Update README metrics
-        shell: python
-        run: |
-          from pathlib import Path
-          import re
-
-          root = Path(".")
-
-          languages = {
-              ".cpp": "C++",
-              ".cc": "C++",
-              ".cxx": "C++",
-              ".c": "C",
-              ".py": "Python",
-              ".java": "Java",
-              ".js": "JavaScript",
-              ".ts": "TypeScript",
-              ".go": "Go",
-              ".cs": "C#",
-              ".rs": "Rust",
-              ".sql": "SQL",
-              ".sh": "Bash",
-          }
-
-          ignored_dirs = {
-              ".git",
-              ".github",
-              "node_modules",
-          }
-
-          problem_pattern = re.compile(r"^\d{4,}-")
-
-          problems = set()
-          language_counts = {}
-
-          for directory in root.iterdir():
-
-              if not directory.is_dir():
-                  continue
-
-              if directory.name in ignored_dirs:
-                  continue
-
-              if not problem_pattern.match(directory.name):
-                  continue
-
-              # One folder = one problem
-              problems.add(directory.name)
-
-              for file in directory.iterdir():
-
-                  if not file.is_file():
-                      continue
-
-                  if file.name.lower() == "readme.md":
-                      continue
-
-                  language = languages.get(file.suffix.lower())
-
-                  if language:
-                      language_counts[language] = (
-                          language_counts.get(language, 0) + 1
-                      )
-
-          total = len(problems)
-
-          language_table = "\n".join(
-              f"| {language} | {count} |"
-              for language, count
-              in sorted(language_counts.items())
-          )
-
-          stats = f"""## Stats
-
-          | Metric | Count |
-          |---|---:|
-          | **Total Problems** | **{total}** |
-
-          ### Solutions by Language
-
-          | Language | Solutions |
-          |---|---:|
-          {language_table}
-          """
-
-          readme = root / "README.md"
-
-          if not readme.exists():
-              raise SystemExit("README.md does not exist")
-
-          content = readme.read_text(encoding="utf-8")
-
-          pattern = r"## Stats\n.*?(?=\n## |\Z)"
-
-          new_content = re.sub(
-              pattern,
-              stats.strip(),
-              content,
-              count=1,
-              flags=re.DOTALL
-          )
-
-          if new_content == content:
-              print("README stats already up to date.")
-          else:
-              readme.write_text(
-                  new_content.rstrip() + "\n",
-                  encoding="utf-8"
-              )
-
-              print("README stats updated.")
+          print("==============================")
+          print(f"Files moved:   {moved}")
+          print(f"Duplicates removed: {deleted}")
+          print("==============================")
 
       - name: Commit changes
         run: |
@@ -272,9 +186,16 @@ jobs:
           git add -A
 
           if git diff --cached --quiet; then
-            echo "Nothing to commit."
+            echo "No organization changes."
             exit 0
           fi
 
-          git commit -m "chore: organize solutions and update stats"
-          git push
+          git commit -m "chore: organize solution files"
+
+      - name: Push
+        run: |
+          git fetch origin main
+
+          git rebase origin/main
+
+          git push origin HEAD:main
