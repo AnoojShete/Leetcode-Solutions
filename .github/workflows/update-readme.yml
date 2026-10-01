@@ -1,4 +1,4 @@
-name: Update README Stats
+name: Organize Solutions and Update README
 
 on:
   push:
@@ -8,90 +8,268 @@ on:
 permissions:
   contents: write
 
+# Prevent two workflow runs from pushing at the same time
+concurrency:
+  group: organize-solutions
+  cancel-in-progress: false
+
 jobs:
-  update-stats:
+  organize-and-update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Update README stats
+      # Make sure we are working on the latest main
+      - name: Sync with remote
+        run: |
+          git fetch origin main
+          git rebase origin/main
+
+      - name: Organize misplaced solution files
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          import subprocess
+          import shutil
+
+          root = Path(".")
+
+          ignored_files = {
+              "README.md",
+              "LICENSE",
+          }
+
+          solution_extensions = {
+              ".cpp",
+              ".cc",
+              ".cxx",
+              ".c",
+              ".py",
+              ".java",
+              ".js",
+              ".ts",
+              ".go",
+              ".cs",
+              ".rs",
+              ".sql",
+              ".sh",
+          }
+
+          # Example:
+          # 0057-insert-interval.cpp
+          # -> 0057-insert-interval/
+          problem_pattern = re.compile(
+              r"^(\d{4,}-[^/]+)(\.[^.]+)$"
+          )
+
+          def git_timestamp(path):
+              """
+              Return the most recent commit timestamp for a file.
+              """
+              try:
+                  result = subprocess.run(
+                      [
+                          "git",
+                          "log",
+                          "-1",
+                          "--format=%ct",
+                          "--",
+                          str(path)
+                      ],
+                      capture_output=True,
+                      text=True,
+                      check=True
+                  )
+
+                  value = result.stdout.strip()
+
+                  if value:
+                      return int(value)
+
+              except subprocess.CalledProcessError:
+                  pass
+
+              return 0
+
+          moved = 0
+          removed = 0
+
+          for file in list(root.iterdir()):
+
+              if not file.is_file():
+                  continue
+
+              if file.name in ignored_files:
+                  continue
+
+              if file.suffix.lower() not in solution_extensions:
+                  continue
+
+              match = problem_pattern.match(file.name)
+
+              if not match:
+                  continue
+
+              problem_folder = match.group(1)
+              destination_dir = root / problem_folder
+
+              # Only organize files when the corresponding
+              # LeetCode problem folder already exists.
+              if not destination_dir.is_dir():
+                  continue
+
+              destination = destination_dir / file.name
+
+              if destination.exists():
+
+                  root_time = git_timestamp(file)
+                  folder_time = git_timestamp(destination)
+
+                  if root_time > folder_time:
+                      print(
+                          f"Newer root version found:"
+                          f" {file} -> {destination}"
+                      )
+
+                      destination.unlink()
+                      shutil.move(str(file), str(destination))
+
+                      moved += 1
+
+                  else:
+                      print(
+                          f"Keeping newer folder version:"
+                          f" {destination}"
+                      )
+
+                      file.unlink()
+
+                      removed += 1
+
+              else:
+                  print(
+                      f"Moving:"
+                      f" {file} -> {destination}"
+                  )
+
+                  shutil.move(str(file), str(destination))
+
+                  moved += 1
+
+          print()
+          print(f"Files moved/replaced: {moved}")
+          print(f"Duplicate files removed: {removed}")
+
+      - name: Update README metrics
         shell: python
         run: |
           from pathlib import Path
           import re
 
-          root = Path(".")
+          root = Path("README.md")
 
-          # Language extensions
           languages = {
               ".cpp": "C++",
               ".cc": "C++",
               ".cxx": "C++",
+              ".c": "C",
               ".py": "Python",
               ".java": "Java",
               ".js": "JavaScript",
               ".ts": "TypeScript",
               ".go": "Go",
               ".cs": "C#",
+              ".rs": "Rust",
               ".sql": "SQL",
               ".sh": "Bash",
-              ".c": "C",
-              ".rs": "Rust",
           }
 
-          # Ignore non-solution files/directories
           ignored_dirs = {
               ".git",
               ".github",
               "node_modules",
           }
 
-          # Problem directories are named like:
-          # 0001-two-sum
-          # 0322-coin-change
           problem_pattern = re.compile(r"^\d{4,}-")
 
           problems = set()
-          language_counts = {name: 0 for name in languages.values()}
 
-          for path in root.iterdir():
+          # language -> set of problems
+          language_problems = {}
 
-              if not path.is_dir() or path.name in ignored_dirs:
+          for directory in Path(".").iterdir():
+
+              if not directory.is_dir():
                   continue
 
-              if not problem_pattern.match(path.name):
+              if directory.name in ignored_dirs:
                   continue
 
-              # One directory = one LeetCode problem
-              problems.add(path.name)
+              if not problem_pattern.match(directory.name):
+                  continue
 
-              for file in path.rglob("*"):
+              problem_name = directory.name
+              problems.add(problem_name)
+
+              for file in directory.iterdir():
+
                   if not file.is_file():
                       continue
 
-                  # Don't count README.md as a solution
                   if file.name.lower() == "readme.md":
                       continue
 
                   language = languages.get(file.suffix.lower())
 
                   if language:
-                      language_counts[language] += 1
+                      language_problems.setdefault(
+                          language, set()
+                      ).add(problem_name)
 
           total = len(problems)
 
-          # Remove languages with zero solutions
-          language_counts = {
-              lang: count
-              for lang, count in language_counts.items()
-              if count > 0
-          }
+          language_order = [
+              "C++",
+              "JavaScript",
+              "Python",
+              "Java",
+              "Go",
+              "C#",
+              "SQL",
+              "Bash",
+              "TypeScript",
+              "Rust",
+              "C",
+          ]
 
-          language_table = "\n".join(
-              f"| {lang} | {count} |"
-              for lang, count in language_counts.items()
+          language_rows = []
+
+          for language in language_order:
+
+              count = len(
+                  language_problems.get(language, set())
+              )
+
+              language_rows.append(
+                  f"| {language} | {count} |"
+              )
+
+          language_table = "\n".join(language_rows)
+
+          content = root.read_text(encoding="utf-8")
+
+          # ---------------------------------------
+          # Update total problems
+          # ---------------------------------------
+
+          stats_pattern = re.compile(
+              r"## Stats\n.*?(?=\n## |\Z)",
+              re.DOTALL
           )
 
           stats = f"""## Stats
@@ -99,48 +277,77 @@ jobs:
           | Metric | Count |
           |---|---:|
           | **Total Problems** | **{total}** |
+          """
 
-          ### Solutions by Language
+          content = stats_pattern.sub(
+              stats.strip(),
+              content,
+              count=1
+          )
 
-          | Language | Solutions |
+          # ---------------------------------------
+          # Update language table
+          # ---------------------------------------
+
+          language_pattern = re.compile(
+              r"## Solutions by Language\n.*?(?=\n## |\Z)",
+              re.DOTALL
+          )
+
+          language_section = f"""## Solutions by Language
+
+          | **Language** | **Problems** |
           |---|---:|
           {language_table}
           """
 
-          readme = Path("README.md")
+          if re.search(
+              r"## Solutions by Language",
+              content
+          ):
+              content = language_pattern.sub(
+                  language_section.strip(),
+                  content,
+                  count=1
+              )
+          else:
+              content += "\n\n" + language_section.strip()
 
-          if not readme.exists():
-              raise SystemExit("README.md not found")
-
-          content = readme.read_text(encoding="utf-8")
-
-          # Replace everything from ## Stats until the next ## heading.
-          pattern = r"## Stats\n.*?(?=\n## |\Z)"
-
-          new_content = re.sub(
-              pattern,
-              stats.strip(),
-              content,
-              flags=re.DOTALL
+          root.write_text(
+              content.rstrip() + "\n",
+              encoding="utf-8"
           )
 
-          if new_content == content:
-              print("README already up to date.")
-          else:
-              readme.write_text(new_content + "\n", encoding="utf-8")
-              print("README stats updated.")
+          print(f"Total problems: {total}")
+          print()
+          print("Problems by language:")
 
-      - name: Commit README changes
+          for language in language_order:
+              print(
+                  f"{language}: "
+                  f"{len(language_problems.get(language, set()))}"
+              )
+
+      - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add README.md
+          git add -A
 
           if git diff --cached --quiet; then
-            echo "No README changes."
+            echo "Nothing to commit."
             exit 0
           fi
 
-          git commit -m "docs: update README stats"
-          git push
+          git commit -m "chore: organize solutions and update stats"
+
+      - name: Push changes
+        run: |
+          git fetch origin main
+
+          # Rebase our generated commit on top of anything
+          # that reached main while the workflow was running.
+          git rebase origin/main
+
+          git push origin HEAD:main
