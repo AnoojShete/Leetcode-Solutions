@@ -1,14 +1,13 @@
 class Solution {
 public:
     vector<int> rearrangeArray(vector<int>& nums) {
-        map<int, int> mpp;
-        for(auto x : nums) mpp[x]++;
+        int freq[101] = {0};
+        for(auto num : nums) freq[num]++;
         vector<int> ans;
-        while(!mpp.empty()) {
-            for(auto it = mpp.begin(); it != mpp.end();) {
-                ans.push_back(it->first);
-                if(--it->second == 0) it = mpp.erase(it);
-                else ++it;
+        for(int i = 0; i < nums.size(); ++i) {
+            for(int j = 1; j < 101; ++j) {
+                if(freq[j] > 0) ans.push_back(j);
+                freq[j]--;
             }
         }
         return ans;
