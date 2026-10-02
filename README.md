@@ -35,12 +35,14 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
 | [4065-rearrange-array-by-removing-distinct-values](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4065-rearrange-array-by-removing-distinct-values/) | Easy |
+| [4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
 | [0355-design-twitter](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0355-design-twitter/) | Medium |
 | [4065-rearrange-array-by-removing-distinct-values](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4065-rearrange-array-by-removing-distinct-values/) | Easy |
+| [4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -82,6 +84,7 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [4065-rearrange-array-by-removing-distinct-values](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4065-rearrange-array-by-removing-distinct-values/) | Easy |
+| [4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement/) | Medium |
 ## Ordered Set
 | Problem Name | Difficulty |
 | ------- | ------- |
