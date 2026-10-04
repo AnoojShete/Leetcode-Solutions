@@ -61,11 +61,13 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
+| [0678-valid-parenthesis-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0678-valid-parenthesis-string/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
+| [0678-valid-parenthesis-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0678-valid-parenthesis-string/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -75,6 +77,7 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
+| [0678-valid-parenthesis-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0678-valid-parenthesis-string/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -96,4 +99,9 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
+| [0678-valid-parenthesis-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0678-valid-parenthesis-string/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0678-valid-parenthesis-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0678-valid-parenthesis-string/) | Medium |
 <!---LeetCode Topics End-->
