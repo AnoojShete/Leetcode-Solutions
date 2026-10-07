@@ -61,6 +61,7 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0032-longest-valid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0032-longest-valid-parentheses/) | Hard |
+| [0301-remove-invalid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0678-valid-parenthesis-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0678-valid-parenthesis-string/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -72,6 +73,7 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
+| [0301-remove-invalid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -104,4 +106,8 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0678-valid-parenthesis-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0678-valid-parenthesis-string/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0301-remove-invalid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 <!---LeetCode Topics End-->
