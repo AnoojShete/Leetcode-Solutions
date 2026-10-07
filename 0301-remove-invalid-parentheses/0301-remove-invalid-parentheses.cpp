@@ -1,47 +1,38 @@
 class Solution {
 public:
-    int isValid(string s) {
+    bool isValid(string &s) {
         int count = 0;
         for(auto ch : s) {
-            if(ch == '(') count++;
-            else if(ch == ')') {
-                if(count == 0) return false;
-                count--;
-            }
+            count += ch == '(';
+            count -= ch == ')';
+            if(count < 0) return false;
         }
-
         return count == 0;
     }
     vector<string> removeInvalidParentheses(string s) {
-        vector<string> ans;
+        int n = s.length();
         queue<string> q;
-        unordered_set<string> vis;
-
+        unordered_set<string> st;
         q.push(s);
-        vis.insert(s);
-
-        bool isFound = false;
+        st.insert(s);
+        bool flag = false;
+        vector<string> ans;
         while(!q.empty()) {
-            string node = q.front(); q.pop();
-
-            if(isValid(node)) {
-                ans.push_back(node);
-                isFound = true;
+            string temp = q.front(); q.pop();
+            if(isValid(temp)) {
+                ans.push_back(temp);
+                flag = true;
             }
-
-            if(isFound) continue;
-
-            for(int i = 0; i < node.size(); ++i) {
-                if(node[i] == ')' || node[i] == '(') {
-                    string temp = node.substr(0, i) + node.substr(i + 1);
-                    if(vis.find(temp) == vis.end()) {
-                        q.push(temp);
-                        vis.insert(temp);
-                    }
+            if(flag) continue;
+            for(int i = 0; i < temp.size(); ++i) {
+                if(temp[i] != '(' && temp[i] != ')') continue;
+                string next = temp.substr(0, i) + temp.substr(i + 1);
+                if(st.find(next) == st.end()) {
+                    q.push(next);
+                    st.insert(next);
                 }
             }
         }
-
         return ans;
     }
 };
