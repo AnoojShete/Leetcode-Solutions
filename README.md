@@ -34,6 +34,7 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
+| [2778-sum-of-squares-of-special-elements](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 | [4065-rearrange-array-by-removing-distinct-values](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4065-rearrange-array-by-removing-distinct-values/) | Easy |
 | [4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement/) | Medium |
 ## Hash Table
@@ -110,4 +111,8 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0301-remove-invalid-parentheses](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0301-remove-invalid-parentheses/) | Hard |
+## Enumeration
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2778-sum-of-squares-of-special-elements](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 <!---LeetCode Topics End-->
