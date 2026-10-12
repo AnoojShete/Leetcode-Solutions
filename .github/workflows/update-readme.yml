@@ -8,7 +8,6 @@ on:
 permissions:
   contents: write
 
-# Prevent two workflow runs from pushing at the same time
 concurrency:
   group: organize-solutions
   cancel-in-progress: false
@@ -23,7 +22,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Make sure we are working on the latest main
       - name: Sync with remote
         run: |
           git fetch origin main
@@ -45,127 +43,74 @@ jobs:
           }
 
           solution_extensions = {
-              ".cpp",
-              ".cc",
-              ".cxx",
-              ".c",
-              ".py",
-              ".java",
-              ".js",
-              ".ts",
-              ".go",
-              ".cs",
-              ".rs",
-              ".sql",
-              ".sh",
+              ".cpp", ".cc", ".cxx", ".c", ".py", ".java",
+              ".js", ".ts", ".go", ".cs", ".rs", ".sql", ".sh",
           }
 
-          # Example:
-          # 0057-insert-interval.cpp
-          # -> 0057-insert-interval/
-          problem_pattern = re.compile(
-              r"^(\d{4,}-[^/]+)(\.[^.]+)$"
-          )
+          # Example: 0057-insert-interval.cpp -> 0057-insert-interval/
+          problem_pattern = re.compile(r"^(\d{4,}-[^/]+)(\.[^.]+)$")
 
           def git_timestamp(path):
-              """
-              Return the most recent commit timestamp for a file.
-              """
               try:
                   result = subprocess.run(
-                      [
-                          "git",
-                          "log",
-                          "-1",
-                          "--format=%ct",
-                          "--",
-                          str(path)
-                      ],
-                      capture_output=True,
-                      text=True,
-                      check=True
+                      ["git", "log", "-1", "--format=%ct", "--", str(path)],
+                      capture_output=True, text=True, check=True
                   )
-
                   value = result.stdout.strip()
-
                   if value:
                       return int(value)
-
               except subprocess.CalledProcessError:
                   pass
-
               return 0
 
           moved = 0
           removed = 0
 
           for file in list(root.iterdir()):
-
               if not file.is_file():
                   continue
-
               if file.name in ignored_files:
                   continue
-
               if file.suffix.lower() not in solution_extensions:
                   continue
 
               match = problem_pattern.match(file.name)
-
               if not match:
                   continue
 
               problem_folder = match.group(1)
               destination_dir = root / problem_folder
 
-              # Only organize files when the corresponding
-              # LeetCode problem folder already exists.
+              # Only organize files when the corresponding folder exists
               if not destination_dir.is_dir():
                   continue
 
               destination = destination_dir / file.name
 
               if destination.exists():
-
                   root_time = git_timestamp(file)
                   folder_time = git_timestamp(destination)
 
                   if root_time > folder_time:
-                      print(
-                          f"Newer root version found:"
-                          f" {file} -> {destination}"
-                      )
-
+                      print(f"Newer root version found: {file} -> {destination}")
                       destination.unlink()
                       shutil.move(str(file), str(destination))
-
                       moved += 1
-
                   else:
-                      print(
-                          f"Keeping newer folder version:"
-                          f" {destination}"
-                      )
-
+                      print(f"Keeping newer folder version: {destination}")
                       file.unlink()
-
                       removed += 1
-
               else:
-                  print(
-                      f"Moving:"
-                      f" {file} -> {destination}"
-                  )
-
+                  print(f"Moving: {file} -> {destination}")
                   shutil.move(str(file), str(destination))
-
                   moved += 1
 
           print()
           print(f"Files moved/replaced: {moved}")
           print(f"Duplicate files removed: {removed}")
 
-            - name: Generate README
+      # ---> FIXED INDENTATION HERE <---
+      - name: Generate README
         shell: python
         run: |
           from pathlib import Path
@@ -174,67 +119,35 @@ jobs:
           readme = Path("README.md")
 
           languages = {
-              ".cpp": "CPP",
-              ".cc": "CPP",
-              ".cxx": "CPP",
-              ".py": "PYTHON",
-              ".java": "JAVA",
-              ".js": "JAVASCRIPT",
-              ".ts": "TYPESCRIPT",
-              ".go": "GO",
-              ".cs": "CSHARP",
-              ".rs": "RUST",
-              ".sql": "SQL",
-              ".sh": "BASH",
-              ".c": "C",
+              ".cpp": "CPP", ".cc": "CPP", ".cxx": "CPP", ".c": "C",
+              ".py": "PYTHON", ".java": "JAVA", ".js": "JAVASCRIPT",
+              ".ts": "TYPESCRIPT", ".go": "GO", ".cs": "CSHARP",
+              ".rs": "RUST", ".sql": "SQL", ".sh": "BASH",
           }
 
           problems = set()
           language_problems = {}
 
           for directory in Path(".").iterdir():
-
               if not directory.is_dir():
                   continue
-
-              if directory.name in {
-                  ".git",
-                  ".github",
-                  "node_modules",
-              }:
+              if directory.name in {".git", ".github", "node_modules"}:
                   continue
-
-              # Only folders like:
-              # 0001-two-sum
-              # 1234-example-problem
-              if len(directory.name) < 6:
-                  continue
-
-              if not directory.name[:4].isdigit():
-                  continue
-
-              if directory.name[4] != "-":
+              if len(directory.name) < 6 or not directory.name[:4].isdigit() or directory.name[4] != "-":
                   continue
 
               problem = directory.name
               problems.add(problem)
 
               for file in directory.iterdir():
-
                   if not file.is_file():
                       continue
-
                   if file.name.lower() == "readme.md":
                       continue
-
-                  language = languages.get(
-                      file.suffix.lower()
-                  )
-
+                  
+                  language = languages.get(file.suffix.lower())
                   if language:
-                      language_problems.setdefault(
-                          language, set()
-                      ).add(problem)
+                      language_problems.setdefault(language, set()).add(problem)
 
           values = {
               "TOTAL": len(problems),
@@ -251,28 +164,16 @@ jobs:
               "C": len(language_problems.get("C", set())),
           }
 
-          # IMPORTANT:
-          # README.md is completely rebuilt from the template.
-          # Anything added by LeetHub to README.md is discarded.
-          content = template.read_text(
-              encoding="utf-8"
-          )
+          # Rebuild completely from the template, stripping LeetHub's added topics
+          content = template.read_text(encoding="utf-8")
 
           for key, value in values.items():
-              content = content.replace(
-                  "{{" + key + "}}",
-                  str(value)
-              )
+              content = content.replace("{{" + key + "}}", str(value))
 
-          readme.write_text(
-              content.rstrip() + "\n",
-              encoding="utf-8"
-          )
+          readme.write_text(content.rstrip() + "\n", encoding="utf-8")
 
           print("README completely regenerated.")
-          print()
-          print(f"Total problems: {values['TOTAL']}")
-
+          print(f"\nTotal problems: {values['TOTAL']}")
           for key, value in values.items():
               print(f"{key}: {value}")
 
@@ -293,9 +194,5 @@ jobs:
       - name: Push changes
         run: |
           git fetch origin main
-
-          # Rebase our generated commit on top of anything
-          # that reached main while the workflow was running.
           git rebase origin/main
-
           git push origin HEAD:main
