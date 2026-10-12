@@ -35,6 +35,7 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
 | [2778-sum-of-squares-of-special-elements](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [4065-rearrange-array-by-removing-distinct-values](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4065-rearrange-array-by-removing-distinct-values/) | Easy |
 | [4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement/) | Medium |
 ## Hash Table
@@ -42,6 +43,7 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | ------- | ------- |
 | [0001-two-sum](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0001-two-sum/) | Easy |
 | [0355-design-twitter](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0355-design-twitter/) | Medium |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [4065-rearrange-array-by-removing-distinct-values](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4065-rearrange-array-by-removing-distinct-values/) | Easy |
 | [4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/4066-maximum-equal-adjacent-pairs-after-at-most-one-replacement/) | Medium |
 ## Linked List
@@ -107,6 +109,7 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0678-valid-parenthesis-string](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0678-valid-parenthesis-string/) | Medium |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -115,4 +118,8 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2778-sum-of-squares-of-special-elements](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 <!---LeetCode Topics End-->
