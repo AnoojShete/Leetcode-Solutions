@@ -29,3 +29,19 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 ## Profile
 
 [LeetCode Profile](https://leetcode.com/u/anoojshete)
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
+<!---LeetCode Topics End-->
