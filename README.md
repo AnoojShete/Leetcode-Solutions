@@ -4,13 +4,13 @@
 
 | Metric | Count |
 |---|---:|
-| **Total Problems** | **600** |
+| **Total Problems** | **601** |
 
 ## Solutions by Language
 
 | **Language** | **Problems** |
 |---|---:|
-| C++ | 539 |
+| C++ | 540 |
 | JavaScript | 50 |
 | Python | 6 |
 | Java | 6 |
@@ -29,15 +29,3 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 ## Profile
 
 [LeetCode Profile](https://leetcode.com/u/anoojshete)
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [3723-maximize-sum-of-squares-of-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
-## Greedy
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [3723-maximize-sum-of-squares-of-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
-<!---LeetCode Topics End-->
