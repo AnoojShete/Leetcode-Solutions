@@ -29,3 +29,15 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 ## Profile
 
 [LeetCode Profile](https://leetcode.com/u/anoojshete)
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3723-maximize-sum-of-squares-of-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3723-maximize-sum-of-squares-of-digits](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
+<!---LeetCode Topics End-->
