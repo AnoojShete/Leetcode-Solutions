@@ -1,9 +1,13 @@
+#define all(a) a.begin(), a.end()
+
 class Solution {
 public:
     vector<int> targetIndices(vector<int>& nums, int target) {
-        sort(nums.begin(), nums.end());
-        vector<int> ans;
-        for(int i = 0; i < nums.size(); ++i) if(nums[i] == target) ans.push_back(i);
+        sort(all(nums));
+        int i = lower_bound(all(nums), target) - nums.begin(); 
+        int j = upper_bound(all(nums), target) - nums.begin();
+        vector<int> ans(j - i);
+        iota(all(ans), i);
         return ans;
     }
 };
