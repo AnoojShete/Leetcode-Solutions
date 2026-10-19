@@ -29,3 +29,19 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 ## Profile
 
 [LeetCode Profile](https://leetcode.com/u/anoojshete)
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2089-find-target-indices-after-sorting-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2089-find-target-indices-after-sorting-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2089-find-target-indices-after-sorting-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
+<!---LeetCode Topics End-->
