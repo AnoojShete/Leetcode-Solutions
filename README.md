@@ -4,13 +4,13 @@
 
 | Metric | Count |
 |---|---:|
-| **Total Problems** | **604** |
+| **Total Problems** | **605** |
 
 ## Solutions by Language
 
 | **Language** | **Problems** |
 |---|---:|
-| C++ | 543 |
+| C++ | 544 |
 | JavaScript | 50 |
 | Python | 6 |
 | Java | 6 |
@@ -29,36 +29,3 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 ## Profile
 
 [LeetCode Profile](https://leetcode.com/u/anoojshete)
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1254-number-of-closed-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1254-number-of-closed-islands/) | Medium |
-| [2089-find-target-indices-after-sorting-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
-## Binary Search
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [2089-find-target-indices-after-sorting-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
-## Sorting
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [2089-find-target-indices-after-sorting-array](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
-## Depth-First Search
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1254-number-of-closed-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1254-number-of-closed-islands/) | Medium |
-## Breadth-First Search
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1254-number-of-closed-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1254-number-of-closed-islands/) | Medium |
-## Union-Find
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1254-number-of-closed-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1254-number-of-closed-islands/) | Medium |
-## Matrix
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1254-number-of-closed-islands](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1254-number-of-closed-islands/) | Medium |
-<!---LeetCode Topics End-->
