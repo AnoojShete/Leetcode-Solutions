@@ -12,7 +12,7 @@
 |---|---:|
 | C++ | 546 |
 | JavaScript | 50 |
-| Python | 6 |
+| Python | 7 |
 | Java | 6 |
 | Go | 13 |
 | C# | 1 |
