@@ -4,13 +4,13 @@
 
 | Metric | Count |
 |---|---:|
-| **Total Problems** | **605** |
+| **Total Problems** | **606** |
 
 ## Solutions by Language
 
 | **Language** | **Problems** |
 |---|---:|
-| C++ | 544 |
+| C++ | 545 |
 | JavaScript | 50 |
 | Python | 6 |
 | Java | 6 |
