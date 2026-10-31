@@ -4,13 +4,13 @@
 
 | Metric | Count |
 |---|---:|
-| **Total Problems** | **608** |
+| **Total Problems** | **609** |
 
 ## Solutions by Language
 
 | **Language** | **Problems** |
 |---|---:|
-| C++ | 547 |
+| C++ | 548 |
 | JavaScript | 50 |
 | Python | 7 |
 | Java | 6 |
@@ -29,19 +29,3 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 ## Profile
 
 [LeetCode Profile](https://leetcode.com/u/anoojshete)
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [3665-twisted-mirror-path-count](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3665-twisted-mirror-path-count/) | Medium |
-## Dynamic Programming
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [3665-twisted-mirror-path-count](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3665-twisted-mirror-path-count/) | Medium |
-## Matrix
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [3665-twisted-mirror-path-count](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3665-twisted-mirror-path-count/) | Medium |
-<!---LeetCode Topics End-->
