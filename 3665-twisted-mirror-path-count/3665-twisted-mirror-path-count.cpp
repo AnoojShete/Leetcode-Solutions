@@ -9,7 +9,7 @@ public:
             if(x == m-1 && y == n-1) return 1;
             if(dp[x][y][flag] != -1) return dp[x][y][flag];
             int count = 0;
-            if(!grid[x][y]) count = (dfs(dfs, x + 1, y, true) + dfs(dfs, x, y + 1, false)) % mod;
+            if(!grid[x][y]) count = ((count + dfs(dfs, x + 1, y, true)) % mod + dfs(dfs, x, y + 1, false)) % mod;
             else {
                 if(flag) {
                     count = (count + dfs(dfs, x, y + 1, false)) % mod;
