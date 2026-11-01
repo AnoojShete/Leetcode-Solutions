@@ -35,6 +35,7 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [3665-twisted-mirror-path-count](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3665-twisted-mirror-path-count/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -44,4 +45,8 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3665-twisted-mirror-path-count](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/3665-twisted-mirror-path-count/) | Medium |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 <!---LeetCode Topics End-->
