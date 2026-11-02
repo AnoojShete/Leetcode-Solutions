@@ -4,13 +4,13 @@
 
 | Metric | Count |
 |---|---:|
-| **Total Problems** | **610** |
+| **Total Problems** | **611** |
 
 ## Solutions by Language
 
 | **Language** | **Problems** |
 |---|---:|
-| C++ | 549 |
+| C++ | 550 |
 | JavaScript | 50 |
 | Python | 7 |
 | Java | 6 |
@@ -29,19 +29,3 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 ## Profile
 
 [LeetCode Profile](https://leetcode.com/u/anoojshete)
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
-## Math
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
-## Sorting
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
-<!---LeetCode Topics End-->
