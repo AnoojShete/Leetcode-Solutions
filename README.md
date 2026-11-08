@@ -29,31 +29,3 @@ Arrays · Strings · Linked Lists · Trees · Graphs · Dynamic Programming · G
 ## Profile
 
 [LeetCode Profile](https://leetcode.com/u/anoojshete)
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1267-count-servers-that-communicate](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1267-count-servers-that-communicate/) | Medium |
-## Depth-First Search
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1267-count-servers-that-communicate](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1267-count-servers-that-communicate/) | Medium |
-## Breadth-First Search
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1267-count-servers-that-communicate](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1267-count-servers-that-communicate/) | Medium |
-## Union-Find
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1267-count-servers-that-communicate](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1267-count-servers-that-communicate/) | Medium |
-## Matrix
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1267-count-servers-that-communicate](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1267-count-servers-that-communicate/) | Medium |
-## Counting
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1267-count-servers-that-communicate](https://github.com/AnoojShete/Leetcode-Solutions/tree/main/1267-count-servers-that-communicate/) | Medium |
-<!---LeetCode Topics End-->
